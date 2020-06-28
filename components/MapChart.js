@@ -25,16 +25,25 @@ class MapChart extends React.Component {
         const marker = this.state.marker;
         return (
             <>
-                <ComposableMap projection="geoAlbersUsa">
+                <ComposableMap width={2000} projection="geoAlbersUsa">
                 <Geographies geography={geoUrl}>
                     {({ geographies }) => (
                         <>
                             {geographies.map(geo => (
                             <Geography
                                 key={geo.rsmKey}
-                                // stroke="#FFF"
                                 geography={geo}
                                 fill="#DDD"
+                                style={{
+                                    default: {
+                                        fill: "#D6D6DA",
+                                        outline: "none"
+                                    },
+                                    hover: {
+                                        fill: "#F53",
+                                        outline: "none"
+                                    }
+                                }}
                             />
                             ))}
                         </>

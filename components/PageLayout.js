@@ -19,7 +19,7 @@ const PageLayout = ({ children }) => {
         <title>Chamilea</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppBar
+      {/* <AppBar
         position="sticky"
         style={{
           backgroundColor: colors.barkBrown,
@@ -28,11 +28,11 @@ const PageLayout = ({ children }) => {
         <Typography variant="h2" align="center">
           WELCOME TO CHAMILEA!
         </Typography>
-      </AppBar>
+      </AppBar> */}
 
       <main
         style={{
-          padding: "5rem 0",
+          padding: "1rem 0",
           flex: 1,
           display: "flex",
           flexDirection: "column",
@@ -57,10 +57,15 @@ const PageLayout = ({ children }) => {
           color: colors.white,
         }}
       >
-        <span>
+        {/* <span>
           Interested in joining during a given month? Email us at
           dvargas92495@gmail.com and nikhilpunwaney@gmail.com
-        </span>
+        </span> */}
+        <center>
+          chamilea
+          <br />
+          nomads living month-to-month in a different city around the world (america while covid-19 is still a thing)
+        </center>
       </footer>
 
       <style jsx global>{`
