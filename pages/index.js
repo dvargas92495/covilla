@@ -4,17 +4,17 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Chamilea</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to Chamilea!
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          We are a community of nomads traveling month-to-month to different cities around the world
         </p>
 
         <div className="grid">
