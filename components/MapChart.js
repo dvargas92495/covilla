@@ -5,7 +5,7 @@ import {
   Geography,
   Marker
 } from "react-simple-maps";
-import markers from './markers';
+import markers from '../pages/markers';
 import ExpandedMarker from "./ExpandedMarker";
 import Modal from "./Modal";
 
