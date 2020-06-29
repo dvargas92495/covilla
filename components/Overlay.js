@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Overlay.module.css';
+import styles from '../util/Overlay.module.css';
 import Typist from 'react-typist';
 
 class Overlay extends React.Component {

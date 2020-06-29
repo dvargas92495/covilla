@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import styles from './Modal.module.css';
+import styles from '../util/Modal.module.css';
 
 class Modal extends React.Component {
   render() {
