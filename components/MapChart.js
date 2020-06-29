@@ -42,6 +42,9 @@ class MapChart extends React.Component {
                                     hover: {
                                         fill: "#F53",
                                         outline: "none"
+                                    },
+                                    pressed: {
+                                        outline: "none"
                                     }
                                 }}
                             />
