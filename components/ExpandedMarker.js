@@ -1,20 +1,19 @@
 import PropTypes from 'prop-types';
 import React from "react";
-
-const fieldsToShow = [
-  "Dates",
-  "Location",
-  "People"
-];
+import styles from '../util/Styles.module.css';
 
 class ExpandedMarker extends React.Component {
   render () {
     const marker = this.props.marker;
     return (
       <center>
-        {Object.keys(marker).filter(m => fieldsToShow.includes(m)).map(m => {
-          return <div key={m}>{m}: {marker[m].toString()}</div>;
-        })}
+        <div>{marker.dates}</div>
+        <div>{marker.location}</div>
+        <div className={styles.dotList}>
+          {marker.people.map(p => {
+            return p.url.length ? <a className={styles.link} href={p.url} target="_blank" rel="noopener noreferrer">{p.name}</a> : <span>{p.name}</span>
+          })}
+        </div>
       </center>
     );
   }

@@ -1,0 +1,13 @@
+/* Styles */
+
+.dotList > *:not(:last-child):after {
+  content: '·';
+  color: #999;
+  font-family: 'PrimaryFontB', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: 0 0.325rem;
+}
+
+.link {
+  text-decoration: none !important;
+}

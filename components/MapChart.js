@@ -52,15 +52,15 @@ class MapChart extends React.Component {
                         </>
                     )}
                 </Geographies>
-                {Object.values(markers).map(({ Location, Coordinates }) => (
-                    <Marker key={Location} coordinates={Coordinates}>
-                    <circle r={10} fill="#F00" stroke="#fff" strokeWidth={2} onClick={this.onClick(Location)} />
+                {Object.values(markers).map(({ location, coordinates }) => (
+                    <Marker key={location} coordinates={coordinates}>
+                    <circle r={10} fill="#F00" stroke="#fff" strokeWidth={2} onClick={this.onClick(location)} />
                     <text
                         textAnchor="middle"
                         y={25}
                         style={{ fontFamily: "system-ui", fill: "#5D5A6D" }}
                     >
-                        {Location}
+                        {location}
                     </text>
                     </Marker>
                 ))}
