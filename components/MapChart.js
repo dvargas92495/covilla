@@ -8,6 +8,7 @@ import {
 import markers from "../util/markers";
 import ExpandedMarker from "./ExpandedMarker";
 import Popover from "@material-ui/core/Popover";
+import { colors } from "../util/styles";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
@@ -16,14 +17,15 @@ class MapChart extends React.Component {
     super(props, context);
     this.state = {
       marker: null,
+      open: false,
     };
   }
 
   onClick = (marker) => (e) => {
-    this.setState({ marker, anchorEl: e.currentTarget });
+    this.setState({ marker, anchorEl: e.currentTarget, open: true });
   };
 
-  handleClose = () => this.setState({ marker: null, anchorEl: null });
+  handleClose = () => this.setState({ open: false });
 
   render() {
     const marker = this.state.marker;
@@ -77,15 +79,15 @@ class MapChart extends React.Component {
           ))}
         </ComposableMap>
         <Popover
-          open={!!marker}
+          open={this.state.open}
           anchorEl={anchorEl}
           onClose={this.handleClose}
           anchorOrigin={{
-            vertical: "bottom",
+            vertical: "top",
             horizontal: "center",
           }}
           transformOrigin={{
-            vertical: "top",
+            vertical: 100,
             horizontal: "center",
           }}
         >
