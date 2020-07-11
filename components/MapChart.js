@@ -32,7 +32,7 @@ class MapChart extends React.Component {
     const anchorEl = this.state.anchorEl;
     return (
       <>
-        <ComposableMap width={2000} projection="geoAlbersUsa">
+        <ComposableMap width={1200} projection="geoAlbersUsa">
           <Geographies geography={geoUrl}>
             {({ geographies }) => (
               <>
