@@ -18,7 +18,7 @@ export default {
   "Nashville, Tennessee": { 
     dates: "Sep 26 - Nov 7 2020",
     location: "Nashville, Tennessee", 
-    coordinates: [-83.1827, 42.4595], 
+    coordinates: [-86.7816, 36.1627], 
     people: [people.Daysi, people.Eliza, people.Kenny, people.Matt, people.Nikhil, people.Sowmya, people.Sravya, people.Vargas],
     completed: false 
   }
