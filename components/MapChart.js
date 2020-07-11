@@ -91,7 +91,7 @@ class MapChart extends React.Component {
             horizontal: "center",
           }}
         >
-          <ExpandedMarker marker={markers[marker]} />
+          {marker && <ExpandedMarker marker={markers[marker]} />}
         </Popover>
       </>
     );

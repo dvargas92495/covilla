@@ -1,62 +1,62 @@
 export default {
   "Anubhav": { 
     name: "Anubhav",
-    photo: "",
+    photo: "/images/people/Anubhav.jpg",
     url: ""
   },
   "Ben": { 
     name: "Ben",
-    photo: "",
+    photo: "/images/people/Ben.jpg",
     url: ""
   },
   "Danny": { 
     name: "Danny",
-    photo: "",
+    photo: "/images/people/Danny.jpg",
     url: ""
   },
   "Daysi": { 
     name: "Daysi",
-    photo: "",
+    photo: "/images/people/Daysi.jpg",
     url: ""
   },
   "Eliza": { 
     name: "Eliza",
-    photo: "",
+    photo: "/images/people/Eliza.jpg",
     url: ""
   },
   "Kenny": { 
     name: "Kenny",
-    photo: "",
+    photo: "/images/people/Kenny.jpg",
     url: "https://twitter.com/futurekennysf"
   },
   "Matt": { 
     name: "Matt",
-    photo: "",
+    photo: "/images/people/Matt.jpg",
     url: ""
   },
   "Nikhil": { 
     name: "Nikhil",
-    photo: "",
+    photo: "/images/people/Nikhil.jpg",
     url: "https://twitter.com/nikhilpunwaney"
   },
   "Parth": { 
     name: "Parth",
-    photo: "",
+    photo: "/images/people/Parth.jpg",
     url: ""
   },
   "Rianna": { 
     name: "Rianna",
-    photo: "",
+    photo: "/images/people/Rianna.jpg",
     url: ""
   },
   "Sravya": { 
     name: "Sravya",
-    photo: "",
+    photo: "/images/people/Sravya.jpg",
     url: ""
   },
   "Vargas": { 
     name: "Vargas",
-    photo: "",
+    photo: "/images/people/Vargas.jpg",
     url: "https://twitter.com/dvargas92495"
   }
 };

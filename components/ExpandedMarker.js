@@ -19,10 +19,10 @@ class ExpandedMarker extends React.Component {
                 rel="noopener noreferrer"
                 key={i}
               >
-                {p.name}
+                {p.photo ? <img src={p.photo} alt={p.name} height={50} width={50} /> : p.name}
               </a>
             ) : (
-              <span key={i}>{p.name}</span>
+              <span key={i}>{p.photo ? <img src={p.photo} alt={p.name} height={50} width={50} /> : p.name}</span>
             );
           })}
         </div>
