@@ -59,7 +59,7 @@ class MapChart extends React.Component {
               </>
             )}
           </Geographies>
-          {Object.values(markers).map(({ location, coordinates }) => (
+          {Object.values(markers).map(({ location, coordinates, label }) => (
             <Marker key={location} coordinates={coordinates}>
               <circle
                 r={10}
@@ -73,7 +73,7 @@ class MapChart extends React.Component {
                 y={25}
                 style={{ fontFamily: "system-ui", fill: "#5D5A6D" }}
               >
-                {location}
+                {label}
               </text>
             </Marker>
           ))}
