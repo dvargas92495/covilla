@@ -7,7 +7,7 @@ export default {
   "Ben": { 
     name: "Ben",
     photo: "/images/people/Ben.jpg",
-    url: ""
+    url: "https://medium.com/@bakerben70"
   },
   "Danny": { 
     name: "Danny",
@@ -17,12 +17,12 @@ export default {
   "Daysi": { 
     name: "Daysi",
     photo: "/images/people/Daysi.jpg",
-    url: ""
+    url: "https://www.instagram.com/dayz1313"
   },
   "Eliza": { 
     name: "Eliza",
     photo: "/images/people/Eliza.jpg",
-    url: ""
+    url: "https://www.instagram.com/elizacreilly"
   },
   "Kenny": { 
     name: "Kenny",
@@ -42,17 +42,22 @@ export default {
   "Parth": { 
     name: "Parth",
     photo: "/images/people/Parth.jpg",
-    url: ""
+    url: "https://medium.com/@shahparth31"
   },
   "Rianna": { 
     name: "Rianna",
     photo: "/images/people/Rianna.jpg",
-    url: ""
+    url: "https://www.instagram.com/rianna_shah/"
+  },
+  "Sowmya": { 
+    name: "Sowmya",
+    photo: "/images/people/Sowmya.jpg",
+    url: "https://twitter.com/sowmyapelluru"
   },
   "Sravya": { 
     name: "Sravya",
     photo: "/images/people/Sravya.jpg",
-    url: ""
+    url: "https://www.instagram.com/sraavs"
   },
   "Vargas": { 
     name: "Vargas",
