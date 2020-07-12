@@ -8,6 +8,7 @@ import {
 import markers from "../util/markers";
 import ExpandedMarker from "./ExpandedMarker";
 import Popover from "@material-ui/core/Popover";
+import SideBar from "./SideBar";
 import { colors } from "../util/styles";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
@@ -15,23 +16,23 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 class MapChart extends React.Component {
   constructor(props, context) {
     super(props, context);
-    this.state = {
-      marker: null,
-      open: false,
-    };
+    this.state = {};
   }
 
-  onClick = (marker) => (e) => {
-    this.setState({ marker, anchorEl: e.currentTarget, open: true });
+  onClick = marker => e => {
+    this.setState({ marker, anchorEl: marker ? e.currentTarget : null });
   };
 
-  handleClose = () => this.setState({ open: false });
+  // onClose = () => {
+  //   this.setState({ anchorEl: null });
+  // }
 
   render() {
     const marker = this.state.marker;
     const anchorEl = this.state.anchorEl;
     return (
       <>
+        {marker && <SideBar onClose={this.onClick()} marker={markers[marker]} />}
         <ComposableMap width={1200} projection="geoAlbersUsa">
           <Geographies geography={geoUrl}>
             {({ geographies }) => (
@@ -78,10 +79,10 @@ class MapChart extends React.Component {
             </Marker>
           ))}
         </ComposableMap>
-        <Popover
-          open={this.state.open}
+        {/* <Popover
+          open={anchorEl ? true : false}
           anchorEl={anchorEl}
-          onClose={this.handleClose}
+          onClose={this.onClose}
           anchorOrigin={{
             vertical: "top",
             horizontal: "center",
@@ -92,7 +93,7 @@ class MapChart extends React.Component {
           }}
         >
           {marker && <ExpandedMarker marker={markers[marker]} />}
-        </Popover>
+        </Popover> */}
       </>
     );
   }
