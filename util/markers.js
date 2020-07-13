@@ -1,5 +1,11 @@
 import people from "./people";
 
+export const status = {
+  COMPLETE: 2,
+  IN_PROGRESS: 1,
+  UPCOMING: 0,
+};
+
 export default {
   "Champions Gate, Florida": {
     dates: "Aug 1-29 2020",
@@ -16,7 +22,7 @@ export default {
       people.Sravya,
       people.Vargas,
     ],
-    completed: false,
+    status: status.COMPLETE,
   },
   "Oak Park, Michigan": {
     dates: "Aug 29 - Sep 26 2020",
@@ -30,7 +36,7 @@ export default {
       people.Parth,
       people.Vargas,
     ],
-    completed: false,
+    status: status.IN_PROGRESS,
   },
   "Nashville, Tennessee": {
     dates: "Sep 26 - Nov 7 2020",
@@ -47,7 +53,7 @@ export default {
       people.Sravya,
       people.Vargas,
     ],
-    completed: false,
+    status: status.UPCOMING,
   },
   "Savannah, Georgia": {
     dates: "Oct 24 - Nov 21 2020",

@@ -1,13 +1,15 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import styles from '../util/SideBar.module.css';
+import PropTypes from "prop-types";
+import React from "react";
+import styles from "../util/SideBar.module.css";
 
 class SideBar extends React.Component {
   render() {
-    const marker = this.props.marker;
+    const marker = this.props.marker || { people: [] };
     return (
       <div className={styles.sidenav}>
-        <div onClick={this.props.onClose} className={styles.closebtn}>&times;</div>
+        <div onClick={this.props.onClose} className={styles.closebtn}>
+          &times;
+        </div>
         <div>{marker.dates}</div>
         <div>{marker.location}</div>
         <div>
@@ -32,7 +34,7 @@ class SideBar extends React.Component {
 
 SideBar.propTypes = {
   onClose: PropTypes.func,
-  marker: PropTypes.object.isRequired
+  marker: PropTypes.object.isRequired,
 };
 
 export default SideBar;

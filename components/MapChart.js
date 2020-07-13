@@ -5,11 +5,22 @@ import {
   Geography,
   Marker,
 } from "react-simple-maps";
-import markers from "../util/markers";
+import markers, { status } from "../util/markers";
 import SideBar from "./SideBar";
 import { colors } from "../util/styles";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
+
+const fillMarker = (s) => {
+  switch (s) {
+    case status.COMPLETE:
+      return "#0F0";
+    case status.IN_PROGRESS:
+      return "#00F";
+    case status.UPCOMING:
+      return colors.night;
+  }
+};
 
 class MapChart extends React.Component {
   constructor(props, context) {
@@ -17,15 +28,27 @@ class MapChart extends React.Component {
     this.state = {};
   }
 
-  onClick = marker => e => {
+
+  close = () => this.setState({ marker: null });
+
+  onClick = (marker) => (e) => {
     this.setState({ marker });
+    e.nativeEvent.stopImmediatePropagation();
+  };
+
+  componentDidMount = () => {
+    document.addEventListener("click", this.close);
+  };
+
+  componentWillUnmount = () => {
+    document.removeEventListener("click", this.close);
   };
 
   render() {
     const marker = this.state.marker;
     return (
       <>
-        {marker && <SideBar onClose={this.onClick()} marker={markers[marker]} />}
+        {marker && <SideBar onClose={this.close} marker={markers[marker]} />}
         <ComposableMap width={1200} projection="geoAlbersUsa">
           <Geographies geography={geoUrl}>
             {({ geographies }) => (
@@ -53,11 +76,11 @@ class MapChart extends React.Component {
               </>
             )}
           </Geographies>
-          {Object.values(markers).map(({ location, coordinates, label }) => (
+          {Object.values(markers).map(({ location, coordinates, label,status }) => (
             <Marker key={location} coordinates={coordinates}>
               <circle
                 r={6}
-                fill={colors.night}
+                fill={fillMarker(status)}
                 onClick={this.onClick(location)}
               />
               <text
