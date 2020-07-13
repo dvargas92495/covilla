@@ -18,7 +18,7 @@ class SideBar extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={i}
-                className={styles.images}
+                className={styles.profiles}
               >
                 <img src={p.photo} alt={p.name} height={50} width={50} />
               </a>

@@ -7,7 +7,7 @@
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.8);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -25,7 +25,7 @@
   margin-left: 50px;
 }
 
-.sidenav .images {
+.sidenav .profiles {
   display: inline-block;
   padding: 0.2rem;
 }

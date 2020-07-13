@@ -49,4 +49,21 @@ export default {
     ],
     completed: false,
   },
+  "Savannah, Georgia": {
+    dates: "Oct 24 - Nov 21 2020",
+    label: "November 2020",
+    location: "Savannah, Georgia",
+    coordinates: [-81.0912, 32.0808],
+    people: [
+      people.Daysi,
+      people.Eliza,
+      people.Kenny,
+      people.Matt,
+      people.Nikhil,
+      people.Sowmya,
+      people.Sravya,
+      people.Vargas,
+    ],
+    completed: false,
+  },
 };
