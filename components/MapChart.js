@@ -28,7 +28,6 @@ class MapChart extends React.Component {
     this.state = {};
   }
 
-
   close = () => this.setState({ marker: null });
 
   onClick = (marker) => (e) => {
@@ -76,22 +75,24 @@ class MapChart extends React.Component {
               </>
             )}
           </Geographies>
-          {Object.values(markers).map(({ location, coordinates, label,status }) => (
-            <Marker key={location} coordinates={coordinates}>
-              <circle
-                r={6}
-                fill={fillMarker(status)}
-                onClick={this.onClick(location)}
-              />
-              <text
-                textAnchor="middle"
-                y={25}
-                style={{ fontFamily: "system-ui", fill: colors.night }}
-              >
-                {label}
-              </text>
-            </Marker>
-          ))}
+          {Object.values(markers).map(
+            ({ location, coordinates, label, status }) => (
+              <Marker key={location} coordinates={coordinates}>
+                <circle
+                  r={6}
+                  fill={fillMarker(status)}
+                  onClick={this.onClick(location)}
+                />
+                <text
+                  textAnchor="middle"
+                  y={25}
+                  style={{ fontFamily: "system-ui", fill: colors.night }}
+                >
+                  {label}
+                </text>
+              </Marker>
+            )
+          )}
         </ComposableMap>
       </>
     );

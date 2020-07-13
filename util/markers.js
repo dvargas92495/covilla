@@ -22,7 +22,7 @@ export default {
       people.Sravya,
       people.Vargas,
     ],
-    status: status.COMPLETE,
+    status: status.UPCOMING,
   },
   "Oak Park, Michigan": {
     dates: "Aug 29 - Sep 26 2020",
@@ -36,10 +36,10 @@ export default {
       people.Parth,
       people.Vargas,
     ],
-    status: status.IN_PROGRESS,
+    status: status.UPCOMING,
   },
   "Nashville, Tennessee": {
-    dates: "Sep 26 - Nov 7 2020",
+    dates: "Sep 26 - Oct 24 2020",
     label: "October 2020",
     location: "Nashville, Tennessee",
     coordinates: [-86.7816, 36.1627],
