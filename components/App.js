@@ -31,7 +31,7 @@ class App extends React.Component {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              backgroundColor: colors.oliveGreen,
+              backgroundColor: colors.washedBlue,
               width: "100%",
               color: colors.white,
             }}

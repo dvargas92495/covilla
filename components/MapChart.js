@@ -34,14 +34,14 @@ class MapChart extends React.Component {
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    fill="#DDD"
+                    fill={colors.washed}
                     style={{
                       default: {
-                        fill: "#D6D6DA",
+                        fill: colors.oliveGreen,
                         outline: "none",
                       },
                       hover: {
-                        fill: "#F53",
+                        fill: colors.fadedGreen,
                         outline: "none",
                       },
                       pressed: {
@@ -56,16 +56,14 @@ class MapChart extends React.Component {
           {Object.values(markers).map(({ location, coordinates, label }) => (
             <Marker key={location} coordinates={coordinates}>
               <circle
-                r={10}
-                fill="#F00"
-                stroke="#fff"
-                strokeWidth={2}
+                r={6}
+                fill={colors.night}
                 onClick={this.onClick(location)}
               />
               <text
                 textAnchor="middle"
                 y={25}
-                style={{ fontFamily: "system-ui", fill: "#5D5A6D" }}
+                style={{ fontFamily: "system-ui", fill: colors.night }}
               >
                 {label}
               </text>
