@@ -27,6 +27,30 @@ class SideBar extends React.Component {
             );
           })}
         </div>
+        <h3>Content:</h3>
+        <div>
+          {marker.content.map((c, i) => (
+            <div
+              key={i}
+              style={{ display: "flex", padding: 8, border: "1px solid white" }}
+            >
+              <div>
+                <a
+                  href={c.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={i}
+                >
+                  <img src={c.type} alt={c.title} height={50} width={50} />
+                </a>
+              </div>
+              <div style={{ marginLeft: 16 }}>
+                <h4 style={{ marginTop: 0, marginBottom: 4 }}>{c.title}</h4>
+                <p style={{ marginTop: 0, marginBottom: 4 }}>{c.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

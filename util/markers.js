@@ -1,4 +1,5 @@
 import people from "./people";
+import content from "./content";
 
 export const status = {
   COMPLETE: 2,
@@ -13,15 +14,14 @@ export default {
     location: "Champions Gate, Florida",
     coordinates: [-81.6179, 28.2619],
     people: [
-      people.Anubhav,
       people.Daysi,
       people.Eliza,
       people.Matt,
       people.Nikhil,
-      people.Rianna,
       people.Sravya,
       people.Vargas,
     ],
+    content: content.slice(0, 2),
     status: status.UPCOMING,
   },
   "Oak Park, Michigan": {
@@ -36,8 +36,11 @@ export default {
       people.Parth,
       people.Vargas,
     ],
+    content: [],
     status: status.UPCOMING,
   },
+  /*
+  // Let's only add places that are booked
   "Nashville, Tennessee": {
     dates: "Sep 26 - Oct 24 2020",
     label: "October 2020",
@@ -53,6 +56,7 @@ export default {
       people.Sravya,
       people.Vargas,
     ],
+    content: [],
     status: status.UPCOMING,
   },
   "Savannah, Georgia": {
@@ -70,6 +74,8 @@ export default {
       people.Sravya,
       people.Vargas,
     ],
+    content: [],
     completed: false,
   },
+  */
 };
