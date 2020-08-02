@@ -22,7 +22,7 @@ export default {
       people.Vargas,
     ],
     content: content.slice(0, 2),
-    status: status.UPCOMING,
+    isCurrent: true,
   },
   "Oak Park, Michigan": {
     dates: "Aug 29 - Sep 26 2020",
@@ -37,7 +37,7 @@ export default {
       people.Vargas,
     ],
     content: [],
-    status: status.UPCOMING,
+    isCurrent: false,
   },
   /*
   // Let's only add places that are booked

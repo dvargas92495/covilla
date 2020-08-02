@@ -11,17 +11,6 @@ import { colors } from "../util/styles";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
-const fillMarker = (s) => {
-  switch (s) {
-    case status.COMPLETE:
-      return "#0F0";
-    case status.IN_PROGRESS:
-      return "#00F";
-    case status.UPCOMING:
-      return colors.night;
-  }
-};
-
 class MapChart extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -76,17 +65,35 @@ class MapChart extends React.Component {
             )}
           </Geographies>
           {Object.values(markers).map(
-            ({ location, coordinates, label, status }) => (
+            ({ location, coordinates, label, isCurrent }) => (
               <Marker key={location} coordinates={coordinates}>
-                <circle
-                  r={6}
-                  fill={fillMarker(status)}
-                  onClick={this.onClick(location)}
-                />
+                {isCurrent ? (
+                  <text
+                    textAnchor="middle"
+                    style={{ fontSize: 24, fill: "#FFFFFF", cursor: "pointer" }}
+                    onClick={this.onClick(location)}
+                  >
+                    &#9733;
+                  </text>
+                ) : (
+                  <circle
+                    r={8}
+                    fill={"#FFFFFF"}
+                    onClick={this.onClick(location)}
+                    style={{
+                      cursor: "pointer",
+                    }}
+                  />
+                )}
                 <text
                   textAnchor="middle"
-                  y={25}
-                  style={{ fontFamily: "system-ui", fill: colors.night }}
+                  y={24}
+                  style={{
+                    fontFamily: "system-ui",
+                    fill: "#FFFFFF",
+                    textShadow: "1px 1px #000000",
+                    fontSize: 16,
+                  }}
                 >
                   {label}
                 </text>

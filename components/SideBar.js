@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import styles from "../util/SideBar.module.css";
+import content from "../util/content";
 
 class SideBar extends React.Component {
   render() {
@@ -27,7 +28,7 @@ class SideBar extends React.Component {
             );
           })}
         </div>
-        <h3>Content:</h3>
+        {marker.content.length > 0 && <h3>Content:</h3>}
         <div>
           {marker.content.map((c, i) => (
             <div
