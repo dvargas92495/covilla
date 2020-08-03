@@ -39,10 +39,8 @@ export default {
     content: [],
     isCurrent: false,
   },
-  /*
-  // Let's only add places that are booked
   "Nashville, Tennessee": {
-    dates: "Sep 26 - Oct 24 2020",
+    dates: "Sep 26 - Nov 7 2020",
     label: "October 2020",
     location: "Nashville, Tennessee",
     coordinates: [-86.7816, 36.1627],
@@ -59,6 +57,7 @@ export default {
     content: [],
     status: status.UPCOMING,
   },
+  /*
   "Savannah, Georgia": {
     dates: "Oct 24 - Nov 21 2020",
     label: "November 2020",

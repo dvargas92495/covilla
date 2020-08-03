@@ -32,7 +32,7 @@ export default {
   "Matt": { 
     name: "Matt",
     photo: "/images/people/Matt.jpg",
-    url: ""
+    url: "https://en.wikipedia.org/wiki/Main_Page"
   },
   "Nikhil": { 
     name: "Nikhil",
