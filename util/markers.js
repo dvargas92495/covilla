@@ -8,10 +8,10 @@ export const status = {
 };
 
 export default {
-  "Champions Gate, Florida": {
+  "Davenport, Florida": {
     dates: "Aug 1-29 2020",
     label: "August 2020",
-    location: "Champions Gate, Florida",
+    location: "Davenport, Florida",
     coordinates: [-81.6179, 28.2619],
     people: [
       people.Daysi,
@@ -39,11 +39,11 @@ export default {
     content: [],
     isCurrent: false,
   },
-  "Nashville, Tennessee": {
+  "Gatlinburg, Tennessee": {
     dates: "Sep 26 - Nov 7 2020",
     label: "October 2020",
-    location: "Nashville, Tennessee",
-    coordinates: [-86.7816, 36.1627],
+    location: "Gatlinburg, Tennessee",
+    coordinates: [-83.5102, 35.7143],
     people: [
       people.Daysi,
       people.Eliza,
