@@ -13,5 +13,11 @@ export default [
         description: 'By: Vargas',
         url: 'https://davidvargas.me/blog/rise-of-the-digital-nomads/',
         type: ARTICLE,
+    },
+    {
+        title: 'Covilla, two weeks in',
+        description: 'By: Nikhil',
+        url: 'https://medium.com/@nikhilpunwaney/covilla-two-weeks-in-4eeef32db3ff',
+        type: ARTICLE,
     }
 ];
