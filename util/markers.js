@@ -21,7 +21,7 @@ export default {
       people.Sravya,
       people.Vargas,
     ],
-    content: content.slice(0, 2),
+    content: content.slice(0, 3),
     isCurrent: true,
   },
   "Oak Park, Michigan": {
