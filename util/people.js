@@ -82,7 +82,7 @@ export default {
   "Summer": { 
     name: "Summer",
     photo: "/images/people/Summer.jpg",
-    url: "https://www.instagram.com/sraavs"
+    url: "https://www.instagram.com/sum_where_new"
   },
   "Tayherr": { 
     name: "Tayherr",
