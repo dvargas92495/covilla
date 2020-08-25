@@ -27,6 +27,7 @@ class SideBar extends React.Component {
             );
           })}
         </div>
+        <br />
         <div>
           {marker.articles.map((c, i) => (
             <div
@@ -40,15 +41,18 @@ class SideBar extends React.Component {
                   rel="noopener noreferrer"
                   key={i}
                 >
-                  <img src={c.icon} alt={c.title} height={50} width={50} />
+                  <img src="/images/content/article.png" alt={c.title} width="25%" />
                 </a>
               </div>
               <div style={{ marginLeft: 16 }}>
                 <h4 style={{ marginTop: 0, marginBottom: 4 }}>{c.title}</h4>
-                <p style={{ marginTop: 0, marginBottom: 4 }}>{c.description}</p>
+                <p style={{ marginTop: 0, marginBottom: 4 }}>By {c.by}</p>
               </div>
             </div>
           ))}
+        </div>
+        <div>
+          <br />
           {marker.videos.map((c, i) => (
             <div
               key={i}
