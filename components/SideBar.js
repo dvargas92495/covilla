@@ -12,6 +12,7 @@ class SideBar extends React.Component {
         </div>
         <div>{marker.dates}</div>
         <div>{marker.location}</div>
+        <br />
         <div>
           {marker.people.map((p, i) => {
             return (
@@ -20,9 +21,9 @@ class SideBar extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={i}
-                className={styles.profiles}
+                className={styles.profile}
               >
-                <img src={p.photo} alt={p.name} height={50} width={50} />
+                <img src={p.photo} alt={p.name} width={50} />
               </a>
             );
           })}
@@ -32,7 +33,7 @@ class SideBar extends React.Component {
           {marker.articles.map((c, i) => (
             <div
               key={i}
-              style={{ display: "flex", padding: 8, border: "1px solid white" }}
+              style={{ display: "flex" }}
             >
               <div>
                 <a
@@ -40,8 +41,9 @@ class SideBar extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   key={i}
+                  className={styles.icon}
                 >
-                  <img src="/images/content/article.png" alt={c.title} width="25%" />
+                  <img src="/images/content/article.png" alt={c.title} width={50} />
                 </a>
               </div>
               <div style={{ marginLeft: 16 }}>
@@ -56,7 +58,7 @@ class SideBar extends React.Component {
           {marker.videos.map((c, i) => (
             <div
               key={i}
-              style={{ display: "flex", padding: 8, border: "1px solid white" }}
+              style={{ display: "flex" }}
             >
               <iframe width="100%" src={c.url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>

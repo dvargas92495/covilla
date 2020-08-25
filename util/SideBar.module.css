@@ -10,6 +10,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   overflow-x: hidden;
   transition: 0.5s;
+  padding: 1rem;
   padding-top: 60px;
 }
 
@@ -25,9 +26,15 @@
   margin-left: 50px;
 }
 
-.sidenav .profiles {
+.sidenav .profile {
   display: inline-block;
-  padding: 0.2rem;
+  margin-right: 0.2rem;
+  width: 50px;
+}
+
+.sidenav .icon {
+  margin-right: 0.2rem;
+  width: 50px;
 }
 
 @media screen and (max-height: 450px) {

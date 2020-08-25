@@ -3,6 +3,10 @@ import videos from "./videos";
 import moment from "moment";
 import people from "./people";
 
+function dateOf(d) {
+  return moment(d, 'MM/DD/YYYY');
+}
+
 export const status = {
   COMPLETE: 2,
   IN_PROGRESS: 1,
@@ -23,8 +27,8 @@ export default {
       people.Sravya,
       people.Vargas,
     ],
-    articles: articles.filter(a => moment(a.date).isBefore(moment('08/30/2020', 'MM/DD/YYYY'))),
-    videos: videos.filter(a => moment(a.date).isBefore(moment('08/30/2020', 'MM/DD/YYYY'))),
+    articles: articles.filter(a => dateOf(a.date).isBefore(dateOf('08/30/2020'))),
+    videos: videos.filter(a => dateOf(a.date).isBefore(dateOf('08/30/2020'))),
     isCurrent: true,
   },
   "Oak Park, Michigan": {
