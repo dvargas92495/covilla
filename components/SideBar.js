@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
 import styles from "../util/SideBar.module.css";
-import content from "../util/content";
 
 class SideBar extends React.Component {
   render() {
@@ -28,9 +27,8 @@ class SideBar extends React.Component {
             );
           })}
         </div>
-        {marker.content.length > 0 && <h3>Content:</h3>}
         <div>
-          {marker.content.map((c, i) => (
+          {marker.articles.map((c, i) => (
             <div
               key={i}
               style={{ display: "flex", padding: 8, border: "1px solid white" }}
@@ -42,13 +40,21 @@ class SideBar extends React.Component {
                   rel="noopener noreferrer"
                   key={i}
                 >
-                  <img src={c.type} alt={c.title} height={50} width={50} />
+                  <img src={c.icon} alt={c.title} height={50} width={50} />
                 </a>
               </div>
               <div style={{ marginLeft: 16 }}>
                 <h4 style={{ marginTop: 0, marginBottom: 4 }}>{c.title}</h4>
                 <p style={{ marginTop: 0, marginBottom: 4 }}>{c.description}</p>
               </div>
+            </div>
+          ))}
+          {marker.videos.map((c, i) => (
+            <div
+              key={i}
+              style={{ display: "flex", padding: 8, border: "1px solid white" }}
+            >
+              <iframe width="100%" src={c.url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           ))}
         </div>

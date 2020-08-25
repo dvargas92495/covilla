@@ -1,5 +1,7 @@
+import articles from "./articles";
+import videos from "./videos";
+import moment from "moment";
 import people from "./people";
-import content from "./content";
 
 export const status = {
   COMPLETE: 2,
@@ -21,7 +23,8 @@ export default {
       people.Sravya,
       people.Vargas,
     ],
-    content: content.slice(0, 3),
+    articles: articles.filter(a => moment(a.date).isBefore(moment('08/30/2020', 'MM/DD/YYYY'))),
+    videos: videos.filter(a => moment(a.date).isBefore(moment('08/30/2020', 'MM/DD/YYYY'))),
     isCurrent: true,
   },
   "Oak Park, Michigan": {
@@ -36,7 +39,8 @@ export default {
       people.Parth,
       people.Vargas,
     ],
-    content: [],
+    articles: [],
+    videos: [],
     isCurrent: false,
   },
   "Gatlinburg, Tennessee": {
@@ -60,7 +64,8 @@ export default {
       people.Tayherr,
       people.Vargas,
     ],
-    content: [],
+    articles: [],
+    videos: [],
     status: status.UPCOMING,
   },
   /*
