@@ -60,7 +60,9 @@ class SideBar extends React.Component {
               key={i}
               style={{ display: "flex" }}
             >
-              <iframe width="100%" src={c.url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div>
+                <iframe width="100%" src={c.url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
             </div>
           ))}
         </div>
