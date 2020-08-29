@@ -19,7 +19,7 @@ class App extends React.Component {
           }}
         >
           <Head>
-            <title>Chamilea</title>
+            <title>covilla</title>
             <link rel="icon" href="/favicon.ico" />
           </Head>
     

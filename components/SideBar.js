@@ -1,6 +1,8 @@
+
 import PropTypes from "prop-types";
 import React from "react";
 import styles from "../util/SideBar.module.css";
+import { toFormat } from "../util/helpers";
 
 class SideBar extends React.Component {
   render() {
@@ -10,8 +12,9 @@ class SideBar extends React.Component {
         <div onClick={this.props.onClose} className={styles.closebtn}>
           &times;
         </div>
-        <div>{marker.dates}</div>
-        <div>{marker.location}</div>
+        <div>{toFormat(marker.start_date)} - {toFormat(marker.end_date)}</div>
+        <br />
+        <div style={{ fontSize: 24 }}>{marker.location}</div>
         <br />
         <div>
           {marker.people.map((p, i) => {
@@ -61,7 +64,7 @@ class SideBar extends React.Component {
               style={{ display: "flex" }}
             >
               <div>
-                <iframe width="100%" src={c.url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" src={`${c.url}?showinfo=0`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           ))}

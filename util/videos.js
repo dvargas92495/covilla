@@ -28,5 +28,25 @@ export default [
         title: 'Boston MA to Davenport FL (Part 6) 7-31-2020',
         url: 'https://www.youtube.com/embed/VI7RoW9OZK4',
         date: '07/31/2020'
+    },
+    {
+        title: 'Boston MA to Davenport FL (Part 7) 7-31-2020',
+        url: 'https://www.youtube.com/embed/lnsmo76u7Uw',
+        date: '07/31/2020'
+    },
+    {
+        title: 'Boston MA to Davenport FL (Part 8) 7-31-2020',
+        url: 'https://www.youtube.com/embed/1U6n4wKjL3Q',
+        date: '07/31/2020'
+    },
+    {
+        title: 'Boston MA to Davenport FL (Part 10) 7-31-2020',
+        url: 'https://www.youtube.com/embed/L2m7pwsCIas',
+        date: '07/31/2020'
+    },
+    {
+        title: 'Boston MA to Davenport FL (Part 11) 7-31-2020',
+        url: 'https://www.youtube.com/embed/WtHbxvg_Jxs',
+        date: '07/31/2020'
     }
 ];

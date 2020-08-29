@@ -42,7 +42,7 @@ class Overlay extends React.Component {
         <Typist cursor={{ show: false }} avgTypingDelay={100}>
           <Typist.Delay ms={4000} />
           <span style={{ "fontSize": "60px" }}>
-            chamilea
+            covilla
           </span>
         </Typist>
       </center>

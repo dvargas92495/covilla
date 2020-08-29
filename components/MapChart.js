@@ -8,6 +8,7 @@ import {
 import markers, { status } from "../util/markers";
 import SideBar from "./SideBar";
 import { colors } from "../util/styles";
+import { isAfter, isBefore } from "../util/helpers";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
@@ -65,25 +66,30 @@ class MapChart extends React.Component {
             )}
           </Geographies>
           {Object.values(markers).map(
-            ({ location, coordinates, label, isCurrent }) => (
+            ({ location, coordinates, label, start_date, end_date }) => (
               <Marker key={location} coordinates={coordinates}>
-                {isCurrent ? (
+                {isBefore(end_date) ? (
+                  <circle
+                    r={8}
+                    fill={colors.night}
+                    onClick={this.onClick(location)}
+                    style={{ cursor: "pointer" }}
+                  />
+                ) : isAfter(start_date) ? (
+                  <circle
+                    r={8}
+                    fill={colors.washedBlue}
+                    onClick={this.onClick(location)}
+                    style={{ cursor: "pointer" }}
+                  />
+                ) : (
                   <text
                     textAnchor="middle"
-                    style={{ fontSize: 24, fill: "#FFFFFF", cursor: "pointer" }}
+                    style={{ fontSize: 24, fill: colors.white, cursor: "pointer" }}
                     onClick={this.onClick(location)}
                   >
                     &#9733;
                   </text>
-                ) : (
-                  <circle
-                    r={8}
-                    fill={"#FFFFFF"}
-                    onClick={this.onClick(location)}
-                    style={{
-                      cursor: "pointer",
-                    }}
-                  />
                 )}
                 <text
                   textAnchor="middle"
