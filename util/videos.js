@@ -40,6 +40,11 @@ export default [
         date: '07/31/2020'
     },
     {
+        title: 'Boston MA to Davenport FL (Part 9) 7-31-2020',
+        url: 'https://www.youtube.com/embed/EMnpbQft59E',
+        date: '07/31/2020'
+    },
+    {
         title: 'Boston MA to Davenport FL (Part 10) 7-31-2020',
         url: 'https://www.youtube.com/embed/L2m7pwsCIas',
         date: '07/31/2020'
