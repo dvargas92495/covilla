@@ -6,7 +6,7 @@ module.exports = {
     },
 
     toFormat: function(d) {
-        return module.exports.dateOf(d).format('MMM d YYYY');
+        return module.exports.dateOf(d).format('MMM D YYYY');
     },
 
     isBefore: function(d) {
