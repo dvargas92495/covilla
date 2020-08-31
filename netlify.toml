@@ -1,5 +1,5 @@
 [[redirects]]
   from = "https://chamilea.com"
   to = "https://covilla.life"
-  status = 200
+  status = 301
   force = true
