@@ -20,7 +20,7 @@ class App extends React.Component {
         >
           <Head>
             <title>covilla</title>
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="images/favicon/favicon.ico" />
           </Head>
     
           <main
