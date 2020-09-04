@@ -20,7 +20,11 @@ class MapChart extends React.Component {
   }
 
   close = (e) => {
-    if (this.sideBarRef.current && this.sideBarRef.current.contains(e.target)) {
+    if (
+      this.sideBarRef.current &&
+      this.sideBarRef.current.contains(e.target) &&
+      e.target.id !== "sidebar-close"
+    ) {
       return;
     }
     this.setState({ marker: null });
