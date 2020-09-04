@@ -16,9 +16,15 @@ class MapChart extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state = {};
+    this.sideBarRef = React.createRef();
   }
 
-  close = () => this.setState({ marker: null });
+  close = (e) => {
+    if (this.sideBarRef.current && this.sideBarRef.current.contains(e.target)) {
+      return;
+    }
+    this.setState({ marker: null });
+  };
 
   onClick = (marker) => (e) => {
     this.setState({ marker });
@@ -37,7 +43,17 @@ class MapChart extends React.Component {
     const marker = this.state.marker;
     return (
       <>
-        {marker && <SideBar onClose={this.close} marker={markers[marker]} />}
+        {marker && (
+          <SideBar
+            onClose={this.close}
+            marker={markers[marker]}
+            ref={(ref) => {
+              if (ref) {
+                this.sideBarRef = ref.containerRef;
+              }
+            }}
+          />
+        )}
         <ComposableMap width={1200} projection="geoAlbersUsa">
           <Geographies geography={geoUrl}>
             {({ geographies }) => (
@@ -85,7 +101,11 @@ class MapChart extends React.Component {
                 ) : (
                   <text
                     textAnchor="middle"
-                    style={{ fontSize: 24, fill: colors.white, cursor: "pointer" }}
+                    style={{
+                      fontSize: 24,
+                      fill: colors.white,
+                      cursor: "pointer",
+                    }}
                     onClick={this.onClick(location)}
                   >
                     &#9733;

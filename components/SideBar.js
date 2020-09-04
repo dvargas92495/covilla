@@ -5,10 +5,15 @@ import styles from "../util/SideBar.module.css";
 import { toFormat } from "../util/helpers";
 
 class SideBar extends React.Component {
+  constructor(props){
+    super(props);
+    this.containerRef = React.createRef();
+  }
+
   render() {
     const marker = this.props.marker || { people: [] };
     return (
-      <div className={styles.sidenav}>
+      <div className={styles.sidenav} ref={this.containerRef}>
         <div onClick={this.props.onClose} className={styles.closebtn}>
           &times;
         </div>
@@ -64,7 +69,7 @@ class SideBar extends React.Component {
               style={{ display: "flex" }}
             >
               <div>
-                <iframe width="100%" src={`${c.url}?showinfo=0`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" src={`${c.url}?showinfo=0`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
           ))}
