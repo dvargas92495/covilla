@@ -132,7 +132,7 @@ class SideBar extends React.Component {
           {marker.haikus.map((c, i) => (
             <div key={i}>
               <div style={{ marginLeft: 16 }}>
-                <h5 style={{ marginTop: 0, marginBottom: 4 }}>{c.for} by {c.by}</h5>
+                <h5 style={{ marginTop: 0, marginBottom: 4 }}>{c.for.name} by {c.by.name}</h5>
                 <p style={{ marginTop: 0, marginBottom: 4 }}>{c.content}</p>
               </div>
             </div>
