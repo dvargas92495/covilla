@@ -61,5 +61,19 @@ export default {
     ],
     articles: [],
     videos: []
+  },
+  "Raleigh, North Carolina": {
+    start_date: "11/07/2020",
+    end_date: "11/23/2020",
+    label: "November 2020",
+    location: "Raleigh, North Carolina",
+    coordinates: [-78.7851, 35.8436],
+    people: [
+      people.Kenny,
+      people.Nikhil,
+      people.Vargas,
+    ],
+    articles: [],
+    videos: []
   }
 };
