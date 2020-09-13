@@ -1,6 +1,7 @@
 import articles from "./articles";
-import videos from "./videos";
+import haikus from "./haikus";
 import people from "./people";
+import videos from "./videos";
 import { dateOf } from "./helpers";
 
 export default {
@@ -19,6 +20,7 @@ export default {
       people.Vargas,
     ],
     articles: articles.filter(a => dateOf(a.date).isBefore(dateOf('08/30/2020'))),
+    haikus: haikus.filter(a => dateOf(a.date).isBefore(dateOf('08/30/2020'))),
     videos: videos.filter(a => dateOf(a.date).isBefore(dateOf('08/30/2020')))
   },
   "Oak Park, Michigan": {
