@@ -37,6 +37,7 @@ export default {
       people.Vargas,
     ],
     articles: [],
+    haikus: [],
     videos: []
   },
   "Gatlinburg, Tennessee": {
@@ -62,6 +63,7 @@ export default {
       people.Vargas,
     ],
     articles: [],
+    haikus: [],
     videos: []
   },
   "Raleigh, North Carolina": {
@@ -76,6 +78,7 @@ export default {
       people.Vargas,
     ],
     articles: [],
+    haikus: [],
     videos: []
   }
 };
