@@ -2,13 +2,35 @@ import React from "react";
 import Head from "next/head";
 import MapChart from "./MapChart";
 import Overlay from "./Overlay";
+import IconButton from "@material-ui/core/IconButton";
+import MailIcon from "@material-ui/icons/Mail";
+import CancelIcon from "@material-ui/icons/Cancel";
 import { colors } from "../util/styles";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showConvertKit: false,
+    };
+  }
+
+  componentDidMount() {}
+
+  loadConvertKit = () => {
+    const s = document.createElement("script");
+    s.async = true;
+    s.src = "https://prodigious-trader-7332.ck.page/dbdc7c9d00/index.js";
+    document.body.appendChild(s);
+  };
+
+  toggleConvertKit = () =>
+    this.setState({ showConvertKit: !this.state.showConvertKit });
+
   render() {
     return (
       <>
-        <Overlay />
+        <Overlay onFinish={this.loadConvertKit} />
         <div
           style={{
             minHeight: "100vh",
@@ -113,6 +135,13 @@ class App extends React.Component {
             }}
           >
             <MapChart />
+            <script data-uid="dbdc7c9d00"></script>
+            <IconButton
+              onClick={this.toggleConvertKit}
+              style={{ position: "fixed", bottom: 0, right: 0 }}
+            >
+              {this.state.showConvertKit ? <CancelIcon /> : <MailIcon />}
+            </IconButton>
           </main>
 
           <style jsx global>{`
@@ -123,6 +152,10 @@ class App extends React.Component {
               font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
                 Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
                 sans-serif;
+            }
+            .formkit-slide-in {
+              bottom: 469px !important;
+              display: ${!this.state.showConvertKit && "none"}
             }
 
             * {
