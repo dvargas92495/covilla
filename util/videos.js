@@ -74,4 +74,19 @@ export default [
         url: 'https://www.youtube.com/embed/FYLhuS66l9Y',
         date: '09/20/2020'
     },
+    {
+        title: 'Ferndale MI to Gatlinburg TN (Part 1) 9-26-2020',
+        url: 'https://www.youtube.com/embed/y4HuM-XYUNI',
+        date: '09/28/2020'
+    },
+    {
+        title: 'Ferndale MI to Gatlinburg TN (Part 2) 9-26-2020',
+        url: 'https://www.youtube.com/embed/IzSev09UL2Q',
+        date: '09/28/2020'
+    },
+    {
+        title: 'Ferndale MI to Gatlinburg TN (Part 3) 9-26-2020',
+        url: 'https://www.youtube.com/embed/x1BrY0ZA2f0',
+        date: '09/28/2020'
+    },
 ];
