@@ -80,5 +80,21 @@ export default {
     articles: [],
     haikus: [],
     videos: []
+  },
+  "San Diego, California": {
+    start_date: "11/29/2020",
+    end_date: "12/20/2020",
+    label: "December 2020",
+    location: "San Diego, California",
+    coordinates: [-117.13378, 32.715832 ],
+    people: [
+      people.Sravya,
+      people.Nikhil,
+      people.Vargas,
+      people.Daysi
+    ],
+    articles: [],
+    haikus: [],
+    videos: []
   }
 };
