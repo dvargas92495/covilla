@@ -53,5 +53,25 @@ export default [
         title: 'Boston MA to Davenport FL (Part 11) 7-31-2020',
         url: 'https://www.youtube.com/embed/WtHbxvg_Jxs',
         date: '07/31/2020'
-    }
+    },
+    {
+        title: 'Cedar Point: Millenium Force',
+        url: 'https://www.youtube.com/embed/eikoGlTU7xw',
+        date: '09/19/2020'
+    },
+    {
+        title: 'Cedar Point: Gemini',
+        url: 'https://www.youtube.com/embed/NC9-Pw9pzCY',
+        date: '09/19/2020'
+    },
+    {
+        title: 'Cedar Point: Gatekeeper',
+        url: 'https://www.youtube.com/embed/UCV9lgrlkxE',
+        date: '09/19/2020'
+    },
+    {
+        title: 'Ferndale to Ann Arbor',
+        url: 'https://www.youtube.com/embed/FYLhuS66l9Y',
+        date: '09/20/2020'
+    },
 ];
