@@ -1,6 +1,7 @@
 import articles from "./articles";
 import haikus from "./haikus";
 import people from "./people";
+import podcasts from "./podcasts";
 import videos from "./videos";
 import { dateOf } from "./helpers";
 
@@ -21,7 +22,8 @@ export default {
     ],
     articles: articles.filter(a => dateOf(a.date).isBefore(dateOf('08/30/2020'))),
     haikus: haikus.filter(a => dateOf(a.date).isBefore(dateOf('08/30/2020'))),
-    videos: videos.filter(a => dateOf(a.date).isBefore(dateOf('08/30/2020')))
+    videos: videos.filter(a => dateOf(a.date).isBefore(dateOf('08/30/2020'))),
+    podcasts: podcasts.filter(a => dateOf(a.date).isBefore(dateOf('08/30/2020')))
   },
   "Oak Park, Michigan": {
     start_date: "08/28/2020",
@@ -36,9 +38,10 @@ export default {
       people.Parth,
       people.Vargas,
     ],
-    articles: [],
-    haikus: [],
-    videos: []
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('08/30/2020')) && dateOf(a.date).isBefore(dateOf('09/27/2020'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('08/30/2020')) && dateOf(a.date).isBefore(dateOf('09/27/2020'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('08/30/2020')) && dateOf(a.date).isBefore(dateOf('09/27/2020'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('08/30/2020')) && dateOf(a.date).isBefore(dateOf('09/27/2020')))
   },
   "Gatlinburg, Tennessee": {
     start_date: "09/26/2020",
@@ -62,9 +65,10 @@ export default {
       people.Tayherr,
       people.Vargas,
     ],
-    articles: [],
-    haikus: [],
-    videos: []
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('09/27/2020')) && dateOf(a.date).isBefore(dateOf('11/08/2020'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('09/27/2020')) && dateOf(a.date).isBefore(dateOf('11/08/2020'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('09/27/2020')) && dateOf(a.date).isBefore(dateOf('11/08/2020'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('09/27/2020')) && dateOf(a.date).isBefore(dateOf('11/08/2020')))
   },
   "Raleigh, North Carolina": {
     start_date: "11/07/2020",
@@ -77,9 +81,10 @@ export default {
       people.Nikhil,
       people.Vargas,
     ],
-    articles: [],
-    haikus: [],
-    videos: []
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('11/08/2020')) && dateOf(a.date).isBefore(dateOf('11/24/2020'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('11/08/2020')) && dateOf(a.date).isBefore(dateOf('11/24/2020'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('11/08/2020')) && dateOf(a.date).isBefore(dateOf('11/24/2020'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('11/08/2020')) && dateOf(a.date).isBefore(dateOf('11/24/2020')))
   },
   "San Diego, California": {
     start_date: "11/29/2020",
@@ -88,13 +93,14 @@ export default {
     location: "San Diego, California",
     coordinates: [-117.13378, 32.715832 ],
     people: [
-      people.Sravya,
+      people.Daysi,
       people.Nikhil,
+      people.Sravya,
       people.Vargas,
-      people.Daysi
     ],
-    articles: [],
-    haikus: [],
-    videos: []
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020')))
   }
 };

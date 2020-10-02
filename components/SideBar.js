@@ -129,6 +129,25 @@ class SideBar extends React.Component {
               </div>
             </div>
           ))}
+          {marker.podcasts.map((c, i) => (
+            <div
+              key={i}
+              style={{ display: "flex", cursor: "pointer" }}
+              onClick={this.setYoutubeId(c.url.substring(30))}
+            >
+              <div className={styles.icon}>
+                <img
+                  src="/images/content/spotify.png"
+                  alt={c.title}
+                  width={50}
+                />
+              </div>
+              <div style={{ marginLeft: 16 }}>
+                <h5 style={{ marginTop: 0, marginBottom: 4 }}>{c.title}</h5>
+                <p style={{ marginTop: 0, marginBottom: 4 }}>{c.date}</p>
+              </div>
+            </div>
+          ))}
           {marker.haikus.map((c, i) => (
             <div key={i}>
               <div style={{ marginLeft: 16 }}>
