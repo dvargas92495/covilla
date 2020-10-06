@@ -4,6 +4,16 @@ export default {
     photo: "/images/people/Abigail.jpg",
     url: "https://www.instagram.com/abbeyruss"
   },
+  "Alisha": { 
+    name: "Alisha",
+    photo: "/images/people/Alisha.jpg",
+    url: "https://www.instagram.com/alishasax"
+  },
+  "Ameet": { 
+    name: "Ameet",
+    photo: "/images/people/Ameet.jpg",
+    url: "https://www.instagram.com/ameetkal"
+  },
   "Anna": { 
     name: "Anna",
     photo: "/images/people/Anna.jpg",
@@ -19,10 +29,20 @@ export default {
     photo: "/images/people/Ben.jpg",
     url: "https://medium.com/@bakerben70"
   },
+  "Colin": { 
+    name: "Colin",
+    photo: "/images/people/Colin.jpg",
+    url: "https://twitter.com/vriad"
+  },
   "Danny": { 
     name: "Danny",
     photo: "/images/people/Danny.jpg",
     url: ""
+  },
+  "DannyV": { 
+    name: "Danny",
+    photo: "/images/people/DannyV.jpg",
+    url: "https://www.instagram.com/danny_vargs"
   },
   "Daysi": { 
     name: "Daysi",
@@ -88,6 +108,11 @@ export default {
     name: "Tayherr",
     photo: "/images/people/Tayherr.jpg",
     url: "https://www.instagram.com/tay_herr"
+  },
+  "Trinh": { 
+    name: "Trinh",
+    photo: "/images/people/Trinh.jpg",
+    url: "https://www.instagram.com/mikerific"
   },
   "Vargas": { 
     name: "Vargas",

@@ -52,6 +52,7 @@ export default {
     people: [
       people.Abigail,
       people.Anna,
+      people.Colin,
       people.Daysi,
       people.Diann,
       people.Eliza,
@@ -63,6 +64,7 @@ export default {
       people.Sravya,
       people.Summer,
       people.Tayherr,
+      people.Trinh,
       people.Vargas,
     ],
     articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('09/27/2020')) && dateOf(a.date).isBefore(dateOf('11/08/2020'))),
@@ -77,6 +79,7 @@ export default {
     location: "Raleigh, North Carolina",
     coordinates: [-78.7851, 35.8436],
     people: [
+      people.Colin,
       people.Kenny,
       people.Nikhil,
       people.Vargas,
@@ -93,6 +96,9 @@ export default {
     location: "San Diego, California",
     coordinates: [-117.13378, 32.715832 ],
     people: [
+      people.Alisha,
+      people.Ameet,
+      people.DannyV,
       people.Daysi,
       people.Nikhil,
       people.Sravya,
