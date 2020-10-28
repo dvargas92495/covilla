@@ -100,6 +100,7 @@ export default {
       people.Ameet,
       people.DannyV,
       people.Daysi,
+      people.Jeffrey,
       people.Nikhil,
       people.Sravya,
       people.Vargas,

@@ -64,6 +64,11 @@ export default {
     photo: "/images/people/Erica.jpg",
     url: "https://www.instagram.com/ericamaybaum"
   },
+  "Jeffrey": {
+    name: "Jeffrey",
+    photo: "/images/people/Jeffrey.png",
+    url: "https://www.instagram.com/jeffreywkim/"
+  },
   "Kenny": { 
     name: "Kenny",
     photo: "/images/people/Kenny.jpg",
