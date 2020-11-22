@@ -1,65 +1,75 @@
 export default {
-  "Abigail": { 
+  "Abigail": {
     name: "Abigail",
     photo: "/images/people/Abigail.jpg",
     url: "https://www.instagram.com/abbeyruss"
   },
-  "Alisha": { 
+  "Alisha": {
     name: "Alisha",
     photo: "/images/people/Alisha.jpg",
     url: "https://www.instagram.com/alishasax"
   },
-  "Ameet": { 
+  "Ameet": {
     name: "Ameet",
     photo: "/images/people/Ameet.jpg",
     url: "https://www.instagram.com/ameetkal"
   },
-  "Anna": { 
+  "Amir": {
+    name: "Amir",
+    photo: "/images/people/Amir.jpg",
+    url: "https://www.instagram.com/amirhassank/"
+  },
+  "Anna": {
     name: "Anna",
     photo: "/images/people/Anna.jpg",
     url: "https://www.instagram.com/annaebair"
   },
-  "Anubhav": { 
+  "Anubhav": {
     name: "Anubhav",
     photo: "/images/people/Anubhav.jpg",
     url: ""
   },
-  "Ben": { 
+  "Ben": {
     name: "Ben",
     photo: "/images/people/Ben.jpg",
     url: "https://medium.com/@bakerben70"
   },
-  "Colin": { 
+  "Colin": {
     name: "Colin",
     photo: "/images/people/Colin.jpg",
     url: "https://twitter.com/vriad"
   },
-  "Danny": { 
+  "Chandler": {
+    name: "Chandler",
+    photo: "/images/people/Chandler.jpg",
+    url: "https://www.instagram.com/chanther"
+  },
+  "Danny": {
     name: "Danny",
     photo: "/images/people/Danny.jpg",
     url: ""
   },
-  "DannyV": { 
+  "DannyV": {
     name: "Danny",
     photo: "/images/people/DannyV.jpg",
     url: "https://www.instagram.com/danny_vargs"
   },
-  "Daysi": { 
+  "Daysi": {
     name: "Daysi",
     photo: "/images/people/Daysi.jpg",
     url: "https://www.instagram.com/dayz1313"
   },
-  "Diann": { 
+  "Diann": {
     name: "Diann",
     photo: "/images/people/Diann.jpg",
     url: "https://www.instagram.com/diannhuynh"
   },
-  "Eliza": { 
+  "Eliza": {
     name: "Eliza",
     photo: "/images/people/Eliza.jpg",
     url: "https://www.instagram.com/elizacreilly"
   },
-  "Erica": { 
+  "Erica": {
     name: "Erica",
     photo: "/images/people/Erica.jpg",
     url: "https://www.instagram.com/ericamaybaum"
@@ -67,59 +77,64 @@ export default {
   "Jeffrey": {
     name: "Jeffrey",
     photo: "/images/people/Jeffrey.png",
-    url: "https://www.instagram.com/jeffreywkim/"
+    url: "https://www.instagram.com/jeffreywkim"
   },
-  "Kenny": { 
+  "Joel": {
+    name: "Joel",
+    photo: "/images/people/Joel.png",
+    url: "https://twitter.com/gustafjt"
+  },
+  "Kenny": {
     name: "Kenny",
     photo: "/images/people/Kenny.jpg",
     url: "https://twitter.com/futurekennysf"
   },
-  "Matt": { 
+  "Matt": {
     name: "Matt",
     photo: "/images/people/Matt.jpg",
     url: "https://en.wikipedia.org/wiki/Main_Page"
   },
-  "Nikhil": { 
+  "Nikhil": {
     name: "Nikhil",
     photo: "/images/people/Nikhil.jpg",
     url: "https://twitter.com/nikhilpunwaney"
   },
-  "Parth": { 
+  "Parth": {
     name: "Parth",
     photo: "/images/people/Parth.jpg",
     url: "https://medium.com/@shahparth31"
   },
-  "Rianna": { 
+  "Rianna": {
     name: "Rianna",
     photo: "/images/people/Rianna.jpg",
     url: "https://www.instagram.com/rianna_shah/"
   },
-  "Sowmya": { 
+  "Sowmya": {
     name: "Sowmya",
     photo: "/images/people/Sowmya.jpg",
     url: "https://twitter.com/sowmyapelluru"
   },
-  "Sravya": { 
+  "Sravya": {
     name: "Sravya",
     photo: "/images/people/Sravya.jpg",
     url: "https://www.instagram.com/sraavs"
   },
-  "Summer": { 
+  "Summer": {
     name: "Summer",
     photo: "/images/people/Summer.jpg",
     url: "https://www.instagram.com/sum_where_new"
   },
-  "Tayherr": { 
+  "Tayherr": {
     name: "Tayherr",
     photo: "/images/people/Tayherr.jpg",
     url: "https://www.instagram.com/tay_herr"
   },
-  "Trinh": { 
+  "Trinh": {
     name: "Trinh",
     photo: "/images/people/Trinh.jpg",
     url: "https://www.instagram.com/mikerific"
   },
-  "Vargas": { 
+  "Vargas": {
     name: "Vargas",
     photo: "/images/people/Vargas.jpg",
     url: "https://twitter.com/dvargas92495"

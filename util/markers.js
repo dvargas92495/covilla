@@ -94,7 +94,7 @@ export default {
     end_date: "12/20/2020",
     label: "December 2020",
     location: "San Diego, California",
-    coordinates: [-117.13378, 32.715832 ],
+    coordinates: [-117.13378, 32.715832],
     people: [
       people.Alisha,
       people.Ameet,
@@ -109,5 +109,33 @@ export default {
     haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020'))),
     videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020'))),
     podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020')))
+  },
+  "San Diego, Virginia": {
+    start_date: "01/10/2021",
+    end_date: "02/06/2021",
+    label: "January 2020",
+    location: "Stanleytown, California",
+    coordinates: [-84.1973192, 38.5088413],
+    people: [
+      people.Amir,
+      people.Anna,
+      people.Anubhav,
+      people.Chandler,
+      people.Daysi,
+      people.Diann,
+      people.Eliza,
+      people.Joel,
+      people.Kenny,
+      people.Matt,
+      people.Nikhil,
+      people.Rianna,
+      people.Sravya,
+      people.Tayherr,
+      people.Vargas,
+    ],
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('01/10/2021')) && dateOf(a.date).isBefore(dateOf('02/07/2021'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('01/10/2021')) && dateOf(a.date).isBefore(dateOf('02/07/2021'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('01/10/2021')) && dateOf(a.date).isBefore(dateOf('02/07/2021'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('01/10/2021')) && dateOf(a.date).isBefore(dateOf('02/07/2021')))
   }
 };
