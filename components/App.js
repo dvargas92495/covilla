@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import MapChart from "./MapChart";
-import Overlay from "./Overlay";
 import IconButton from "@material-ui/core/IconButton";
 import MailIcon from "@material-ui/icons/Mail";
 import CancelIcon from "@material-ui/icons/Cancel";
 import { colors } from "../util/styles";
+import Typist from "react-typist";
 
 class App extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Overlay onFinish={this.loadConvertKit} />
+        
         <div
           style={{
             minHeight: "100vh",
@@ -134,6 +134,12 @@ class App extends React.Component {
               color: colors.white,
             }}
           >
+          
+          <h1>Covilla</h1>
+          <Typist cursor={{ show: false }}>
+          <span>nomads living month-to-month in different cities.</span>
+          </Typist>
+
             <MapChart />
             <script data-uid="dbdc7c9d00"></script>
             <IconButton
