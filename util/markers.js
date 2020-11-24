@@ -113,7 +113,7 @@ export default {
   "San Diego, Virginia": {
     start_date: "01/10/2021",
     end_date: "02/06/2021",
-    label: "January 2020",
+    label: "January 2021",
     location: "Stanleytown, California",
     coordinates: [-84.1973192, 38.5088413],
     people: [
