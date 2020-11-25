@@ -6,5 +6,6 @@ export const colors = {
   fadedGreen: "#93a889",
   washedBlue: "#00699440",
   washed: "#ced7de",
+  washedDarker: "c0d0d0",
   white: "#ffffff",
 };

@@ -129,9 +129,9 @@ class App extends React.Component {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              backgroundColor: "#fefefe",
+              backgroundColor: colors.white,
               width: "100%",
-              color: "#101010",
+              color: colors.night,
             }}
           >
           
