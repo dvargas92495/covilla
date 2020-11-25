@@ -69,11 +69,12 @@ class MapChart extends React.Component {
                     fill={colors.washed}
                     style={{
                       default: {
-                        fill: colors.oliveGreen,
-                        outline: "none",
+                        fill: colors.washed,
+                        stroke: colors.washedDarker,
+                        "stoke-width": "0.25px"
                       },
                       hover: {
-                        fill: colors.fadedGreen,
+                        fill: "#C1DEE7",
                         outline: "none",
                       },
                       pressed: {
@@ -107,7 +108,7 @@ class MapChart extends React.Component {
                     textAnchor="middle"
                     style={{
                       fontSize: 24,
-                      fill: colors.white,
+                      fill: colors.black,
                       cursor: "pointer",
                     }}
                     onClick={this.onClick(location)}
@@ -120,9 +121,8 @@ class MapChart extends React.Component {
                   y={24}
                   style={{
                     fontFamily: "system-ui",
-                    fill: "#FFFFFF",
-                    textShadow: "1px 1px #000000",
                     fontSize: 16,
+                    fill: colors.black,
                   }}
                 >
                   {label}
