@@ -17,7 +17,7 @@ export default {
   "Amir": {
     name: "Amir",
     photo: "/images/people/Amir.jpg",
-    url: "https://www.instagram.com/amirhassank/"
+    url: "https://www.instagram.com/amirhassank"
   },
   "Anna": {
     name: "Anna",
