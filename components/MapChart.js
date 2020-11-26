@@ -71,7 +71,7 @@ class MapChart extends React.Component {
                       default: {
                         fill: colors.washed,
                         stroke: colors.washedDarker,
-                        "stoke-width": "0.25px"
+                        stokeWidth: "0.25px"
                       },
                       hover: {
                         fill: "#C1DEE7",

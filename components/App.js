@@ -15,15 +15,6 @@ class App extends React.Component {
     };
   }
 
-  componentDidMount() { }
-
-  loadConvertKit = () => {
-    const s = document.createElement("script");
-    s.async = true;
-    s.src = "https://prodigious-trader-7332.ck.page/dbdc7c9d00/index.js";
-    document.body.appendChild(s);
-  };
-
   toggleConvertKit = () =>
     this.setState({ showConvertKit: !this.state.showConvertKit });
 
@@ -119,6 +110,7 @@ class App extends React.Component {
               content="images/favicon/ms-icon-144x144.png"
             />
             <meta name="theme-color" content="#ffffff" />
+            <script async src="https://prodigious-trader-7332.ck.page/dbdc7c9d00/index.js"/>
           </Head>
 
           <main
@@ -159,9 +151,11 @@ class App extends React.Component {
                 Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
                 sans-serif;
             }
-            .formkit-slide-in {
-              bottom: 469px !important;
-              display: ${!this.state.showConvertKit && "none"}
+            .formkit-form {
+              display: ${!this.state.showConvertKit && "none"};
+              position: absolute;
+              bottom: 32px;
+              right: 32px;
             }
 
             * {
