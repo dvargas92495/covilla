@@ -81,7 +81,7 @@ export default {
   },
   "Joel": {
     name: "Joel",
-    photo: "/images/people/Joel.png",
+    photo: "/images/people/Joel.jpg",
     url: "https://twitter.com/gustafjt"
   },
   "Kenny": {
