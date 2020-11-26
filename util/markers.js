@@ -9,7 +9,7 @@ export default {
   "Davenport, Florida": {
     start_date: "08/01/2020",
     end_date: "08/28/2020",
-    label: "August 2020",
+    label: "Aug 2020",
     location: "Davenport, Florida",
     coordinates: [-81.6179, 28.2619],
     people: [
@@ -28,7 +28,7 @@ export default {
   "Oak Park, Michigan": {
     start_date: "08/28/2020",
     end_date: "09/26/2020",
-    label: "September 2020",
+    label: "Sept 2020",
     location: "Oak Park, Michigan",
     coordinates: [-83.1827, 42.4595],
     people: [
@@ -46,7 +46,7 @@ export default {
   "Gatlinburg, Tennessee": {
     start_date: "09/26/2020",
     end_date: "11/07/2020",
-    label: "October 2020",
+    label: "Oct 2020",
     location: "Gatlinburg, Tennessee",
     coordinates: [-83.5102, 35.7143],
     people: [
@@ -75,7 +75,7 @@ export default {
   "Raleigh, North Carolina": {
     start_date: "11/07/2020",
     end_date: "11/23/2020",
-    label: "November 2020",
+    label: "Nov 2020",
     location: "Raleigh, North Carolina",
     coordinates: [-78.7851, 35.8436],
     people: [
@@ -92,7 +92,7 @@ export default {
   "San Diego, California": {
     start_date: "11/29/2020",
     end_date: "12/20/2020",
-    label: "December 2020",
+    label: "Dec 2020",
     location: "San Diego, California",
     coordinates: [-117.13378, 32.715832],
     people: [
@@ -113,7 +113,7 @@ export default {
   "San Diego, Virginia": {
     start_date: "01/10/2021",
     end_date: "02/06/2021",
-    label: "January 2021",
+    label: "Jan 2021",
     location: "Stanleytown, California",
     coordinates: [-84.1973192, 38.5088413],
     people: [
