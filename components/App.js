@@ -110,27 +110,28 @@ class App extends React.Component {
               content="images/favicon/ms-icon-144x144.png"
             />
             <meta name="theme-color" content="#ffffff" />
-            <script async src="https://prodigious-trader-7332.ck.page/dbdc7c9d00/index.js"/>
+            <script async src="https://prodigious-trader-7332.ck.page/dbdc7c9d00/index.js" />
           </Head>
 
           <main
             style={{
-              padding: "1rem 0",
-              flex: 1,
+              padding: 0,
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
               backgroundColor: colors.white,
-              width: "100%",
+              width: "100vw",
+              height: "100vh",
               color: colors.night,
             }}
           >
-
-            <h1>covilla</h1>
-            <Typist cursor={{ show: false }}>
-              <span>nomads living month-to-month in different cities.</span>
-            </Typist>
+            <h1 style={{ paddingTop: "2.7rem" }}>covilla</h1>
+            <div style={{ padding: "0 4rem", textAlign: "center" }}>
+              <Typist cursor={{ show: false }}>
+                <span>nomads living month-to-month in different cities.</span>
+              </Typist>
+            </div>
 
             <MapChart />
             <script data-uid="dbdc7c9d00"></script>
