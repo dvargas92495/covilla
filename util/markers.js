@@ -111,11 +111,11 @@ export default {
     podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020')))
   },
   "Stanleytown, Virginia": {
-    start_date: "01/10/2021",
+    start_date: "01/09/2021",
     end_date: "02/06/2021",
     label: "Jan 2021",
     location: "Stanleytown, Virginia",
-    coordinates: [-84.1973192, 38.5088413],
+    coordinates: [-79.946667, 36.734722],
     people: [
       people.Amir,
       people.Anna,
