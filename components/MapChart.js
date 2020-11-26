@@ -91,37 +91,37 @@ class MapChart extends React.Component {
               <Marker key={location} coordinates={coordinates}>
                 {isBefore(end_date) ? (
                   <circle
-                    r={8}
+                    r={4}
                     fill={colors.night}
                     onClick={this.onClick(location)}
                     style={{ cursor: "pointer" }}
                   />
                 ) : isAfter(start_date) ? (
                   <circle
-                    r={8}
+                    r={4}
                     fill={colors.washedBlue}
                     onClick={this.onClick(location)}
                     style={{ cursor: "pointer" }}
                   />
                 ) : (
-                  <text
-                    textAnchor="middle"
-                    style={{
-                      fontSize: 24,
-                      fill: colors.black,
-                      cursor: "pointer",
-                    }}
-                    onClick={this.onClick(location)}
-                  >
-                    &#9733;
-                  </text>
-                )}
+                      <text
+                        textAnchor="middle"
+                        style={{
+                          fontSize: 18,
+                          fill: colors.black,
+                          cursor: "pointer",
+                        }}
+                        onClick={this.onClick(location)}
+                      >
+                        &#9733;
+                      </text>
+                    )}
                 <text
                   textAnchor="middle"
                   y={24}
                   style={{
                     fontFamily: "system-ui",
-                    fontSize: 16,
+                    fontSize: 12,
                     fill: colors.black,
                   }}
                 >

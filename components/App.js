@@ -15,7 +15,7 @@ class App extends React.Component {
     };
   }
 
-  componentDidMount() {}
+  componentDidMount() { }
 
   loadConvertKit = () => {
     const s = document.createElement("script");
@@ -30,7 +30,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        
+
         <div
           style={{
             minHeight: "100vh",
@@ -134,11 +134,11 @@ class App extends React.Component {
               color: colors.night,
             }}
           >
-          
-          <h1>Covilla</h1>
-          <Typist cursor={{ show: false }}>
-          <span>nomads living month-to-month in different cities.</span>
-          </Typist>
+
+            <h1>covilla</h1>
+            <Typist cursor={{ show: false }}>
+              <span>nomads living month-to-month in different cities.</span>
+            </Typist>
 
             <MapChart />
             <script data-uid="dbdc7c9d00"></script>

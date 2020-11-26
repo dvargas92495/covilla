@@ -110,11 +110,11 @@ export default {
     videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020'))),
     podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020')))
   },
-  "San Diego, Virginia": {
+  "Stanleytown, Virginia": {
     start_date: "01/10/2021",
     end_date: "02/06/2021",
     label: "Jan 2021",
-    location: "Stanleytown, California",
+    location: "Stanleytown, Virginia",
     coordinates: [-84.1973192, 38.5088413],
     people: [
       people.Amir,

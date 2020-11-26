@@ -27,7 +27,7 @@ export default {
   "Anubhav": {
     name: "Anubhav",
     photo: "/images/people/Anubhav.jpg",
-    url: ""
+    url: "https://www.instagram.com/anubhav.guha"
   },
   "Ben": {
     name: "Ben",
@@ -107,7 +107,7 @@ export default {
   "Rianna": {
     name: "Rianna",
     photo: "/images/people/Rianna.jpg",
-    url: "https://www.instagram.com/rianna_shah/"
+    url: "https://www.instagram.com/rianna_shah"
   },
   "Sowmya": {
     name: "Sowmya",
