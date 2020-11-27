@@ -15,9 +15,12 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 function DetailView(props) {
   const tMarker = props.datMarker;
   if (tMarker) {
-    return <h1>{tMarker}</h1>;
+    return <div>
+            <h1>{tMarker}</h1>
+            <h2>{tMarker.location}</h2>
+          </div>
   } else {
-    return <h1></h1>;  
+    return <div></div>;  
   }
 }
 
