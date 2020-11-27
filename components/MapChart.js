@@ -10,7 +10,57 @@ import SideBar from "./SideBar";
 import { colors } from "../util/styles";
 import { isAfter, isBefore } from "../util/helpers";
 
+import styles from "../util/SideBar.module.css";
+
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
+
+function DetailView(props) {
+  const tMarker = props.datMarker;
+  if (tMarker) {
+    return <div>
+            <div style={{"text-align":"center"}}>
+              <h1>{tMarker}</h1>
+              <h2>{markers[tMarker].label}</h2>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                maxWidth: "400px"
+              }}
+            >
+              {markers[tMarker].people.map((p, i) => {
+                return (
+                  <a
+                    href={p.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={i}
+                    className={styles.profile}
+                    style={{
+                      padding: "5px",
+                    }}
+
+                  >
+                    <img
+                      src={p.photo}
+                      alt={p.name}
+                      width={50}
+                      style={{"border-radius": "5px"}}
+                    />
+                  </a>
+                );
+              })}
+            </div>
+
+          </div>
+  } else {
+    return <div></div>;  
+  }
+}
 
 class MapChart extends React.Component {
   constructor(props, context) {
@@ -47,18 +97,12 @@ class MapChart extends React.Component {
     const marker = this.state.marker;
     return (
       <>
-        {marker && (
-          <SideBar
-            onClose={this.close}
-            marker={markers[marker]}
-            ref={(ref) => {
-              if (ref) {
-                this.sideBarRef = ref.containerRef;
-              }
-            }}
-          />
-        )}
-        <ComposableMap width={1200} projection="geoAlbersUsa">
+        <ComposableMap width={1200} projection="geoAlbersUsa"
+        style={{
+          transition: "width 0.5s ease-in-out",
+          width: marker ? '300px' : '1000px'
+        }}
+        >
           <Geographies geography={geoUrl}>
             {({ geographies }) => (
               <>
@@ -131,6 +175,7 @@ class MapChart extends React.Component {
             )
           )}
         </ComposableMap>
+        <DetailView datMarker={marker} />  
       </>
     );
   }
