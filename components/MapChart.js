@@ -5,62 +5,12 @@ import {
   Geography,
   Marker,
 } from "react-simple-maps";
-import markers, { status } from "../util/markers";
-import SideBar from "./SideBar";
+import markers from "../util/markers";
+import DetailView from "./DetailView";
 import { colors } from "../util/styles";
 import { isAfter, isBefore } from "../util/helpers";
 
-import styles from "../util/SideBar.module.css";
-
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
-
-function DetailView(props) {
-  const tMarker = props.datMarker;
-  if (tMarker) {
-    return <div>
-            <div style={{"text-align":"center"}}>
-              <h1>{tMarker}</h1>
-              <h2>{markers[tMarker].label}</h2>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-                maxWidth: "400px"
-              }}
-            >
-              {markers[tMarker].people.map((p, i) => {
-                return (
-                  <a
-                    href={p.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={i}
-                    className={styles.profile}
-                    style={{
-                      padding: "5px",
-                    }}
-
-                  >
-                    <img
-                      src={p.photo}
-                      alt={p.name}
-                      width={50}
-                      style={{"border-radius": "5px"}}
-                    />
-                  </a>
-                );
-              })}
-            </div>
-
-          </div>
-  } else {
-    return <div></div>;  
-  }
-}
 
 class MapChart extends React.Component {
   constructor(props, context) {
@@ -69,39 +19,23 @@ class MapChart extends React.Component {
     this.sideBarRef = React.createRef();
   }
 
-  close = (e) => {
-    if (
-      this.sideBarRef.current &&
-      this.sideBarRef.current.contains(e.target) &&
-      e.target.id !== "sidebar-close"
-    ) {
-      return;
-    }
+  close = () => {
     this.setState({ marker: null });
   };
 
-  onClick = (marker) => (e) => {
+  onClick = (marker) => () => {
     this.setState({ marker });
-    e.nativeEvent.stopImmediatePropagation();
-  };
-
-  componentDidMount = () => {
-    document.addEventListener("click", this.close);
-  };
-
-  componentWillUnmount = () => {
-    document.removeEventListener("click", this.close);
   };
 
   render() {
-    const marker = this.state.marker;
+    const marker = markers[this.state.marker];
     return (
       <>
         <ComposableMap width={1200} projection="geoAlbersUsa"
-        style={{
-          transition: "width 0.5s ease-in-out",
-          width: marker ? '300px' : '1000px'
-        }}
+          style={{
+            transition: "width 0.5s ease-in-out",
+            width: marker ? '300px' : '1000px'
+          }}
         >
           <Geographies geography={geoUrl}>
             {({ geographies }) => (
@@ -175,7 +109,7 @@ class MapChart extends React.Component {
             )
           )}
         </ComposableMap>
-        <DetailView datMarker={marker} />  
+        <DetailView marker={marker} close={this.close} />
       </>
     );
   }

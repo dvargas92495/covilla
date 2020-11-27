@@ -134,7 +134,7 @@ class App extends React.Component {
             </div>
 
             <MapChart />
-            <script data-uid="dbdc7c9d00"></script>
+            <script data-uid="dbdc7c9d00" />
             <IconButton
               onClick={this.toggleConvertKit}
               style={{ position: "fixed", bottom: 0, right: 0 }}

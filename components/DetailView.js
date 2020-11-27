@@ -1,16 +1,28 @@
 import PropTypes from "prop-types";
 import React from "react";
-import YouTube from "react-youtube";
-import styles from "../util/SideBar.module.css";
-import { toFormat } from "../util/helpers";
 
-class SideBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.containerRef = React.createRef();
+import styles from "../util/SideBar.module.css";
+
+class DetailView extends React.Component {
+  constructor(props, context) {
+    super(props, context);
     this.state = {
-      youtubeId: "",
+      youtubeId: ""
     };
+    this.wrapperRef = React.createRef();
+  }
+
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleClickOutside);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClickOutside);
+  }
+
+  handleClickOutside = (event) => {
+    if (this.wrapperRef.current && this.wrapperRef.current.contains(event.target)) return;
+    this.props.close();
   }
 
   setYoutubeId = (youtubeId) => () => this.setState({ youtubeId });
@@ -22,19 +34,24 @@ class SideBar extends React.Component {
   };
 
   render() {
-    const marker = this.props.marker || { people: [] };
+    const marker = this.props.marker;
+    if (!marker) return <div />;
     return (
-      <div className={styles.sidenav} ref={this.containerRef}>
-        <div onClick={this.props.onClose} className={styles.closebtn} id="sidebar-close">
-          &times;
+      <div ref={this.wrapperRef}>
+        <div style={{ "textAlign": "center" }}>
+          <h1>{marker.location}</h1>
+          <h2>{marker.label}</h2>
         </div>
-        <div>
-          {toFormat(marker.start_date)} - {toFormat(marker.end_date)}
-        </div>
-        <br />
-        <div style={{ fontSize: 24 }}>{marker.location}</div>
-        <br />
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            maxWidth: "400px"
+          }}
+        >
           {marker.people.map((p, i) => {
             return (
               <a
@@ -43,13 +60,21 @@ class SideBar extends React.Component {
                 rel="noopener noreferrer"
                 key={i}
                 className={styles.profile}
+                style={{
+                  padding: "5px",
+                }}
+
               >
-                <img src={p.photo} alt={p.name} width={50} />
+                <img
+                  src={p.photo}
+                  alt={p.name}
+                  width={50}
+                  style={{ "borderRadius": "5px" }}
+                />
               </a>
             );
           })}
         </div>
-        <br />
         <div>
           {marker.articles.map((c, i) => (
             <a
@@ -168,9 +193,9 @@ class SideBar extends React.Component {
   }
 }
 
-SideBar.propTypes = {
-  onClose: PropTypes.func,
-  marker: PropTypes.object.isRequired,
+DetailView.propTypes = {
+  marker: PropTypes.object,
+  close: PropTypes.func.isRequired
 };
 
-export default SideBar;
+export default DetailView;
