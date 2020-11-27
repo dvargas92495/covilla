@@ -118,7 +118,7 @@ class App extends React.Component {
               padding: 0,
               display: "flex",
               flexDirection: "column",
-              justifyContent: "center",
+              justifyContent: "flex-start",
               alignItems: "center",
               backgroundColor: colors.white,
               width: "100vw",

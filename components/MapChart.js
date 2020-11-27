@@ -12,6 +12,15 @@ import { isAfter, isBefore } from "../util/helpers";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
+function DetailView(props) {
+  const tMarker = props.datMarker;
+  if (tMarker) {
+    return <h1>{tMarker}</h1>;
+  } else {
+    return <h1></h1>;  
+  }
+}
+
 class MapChart extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -47,18 +56,12 @@ class MapChart extends React.Component {
     const marker = this.state.marker;
     return (
       <>
-        {marker && (
-          <SideBar
-            onClose={this.close}
-            marker={markers[marker]}
-            ref={(ref) => {
-              if (ref) {
-                this.sideBarRef = ref.containerRef;
-              }
-            }}
-          />
-        )}
-        <ComposableMap width={1200} projection="geoAlbersUsa">
+        <ComposableMap width={1200} projection="geoAlbersUsa"
+        style={{
+          transition: "width 0.5s ease-in-out",
+          width: marker ? '300px' : '1000px'
+        }}
+        >
           <Geographies geography={geoUrl}>
             {({ geographies }) => (
               <>
@@ -131,6 +134,7 @@ class MapChart extends React.Component {
             )
           )}
         </ComposableMap>
+        <DetailView datMarker={marker} />  
       </>
     );
   }
