@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import {
   ComposableMap,
@@ -16,15 +17,11 @@ class MapChart extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state = {};
-    this.sideBarRef = React.createRef();
   }
 
-  close = () => {
-    this.setState({ marker: null });
-  };
-
-  onClick = (marker) => () => {
+  setMarker = (marker) => () => {
     this.setState({ marker });
+    this.props.setMarker(marker);
   };
 
   render() {
@@ -71,14 +68,14 @@ class MapChart extends React.Component {
                   <circle
                     r={4}
                     fill={colors.night}
-                    onClick={this.onClick(location)}
+                    onClick={this.setMarker(location)}
                     style={{ cursor: "pointer" }}
                   />
                 ) : isAfter(start_date) ? (
                   <circle
                     r={4}
                     fill={colors.washedBlue}
-                    onClick={this.onClick(location)}
+                    onClick={this.setMarker(location)}
                     style={{ cursor: "pointer" }}
                   />
                 ) : (
@@ -89,7 +86,7 @@ class MapChart extends React.Component {
                           fill: colors.black,
                           cursor: "pointer",
                         }}
-                        onClick={this.onClick(location)}
+                        onClick={this.setMarker(location)}
                       >
                         &#9733;
                       </text>
@@ -109,10 +106,14 @@ class MapChart extends React.Component {
             )
           )}
         </ComposableMap>
-        <DetailView marker={marker} close={this.close} />
+        <DetailView marker={marker} onClose={this.setMarker()} />
       </>
     );
   }
 }
+
+MapChart.propTypes = {
+  setMarker: PropTypes.func.isRequired
+};
 
 export default MapChart;

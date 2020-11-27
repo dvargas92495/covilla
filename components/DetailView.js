@@ -22,7 +22,7 @@ class DetailView extends React.Component {
 
   handleClickOutside = (event) => {
     if (this.wrapperRef.current && this.wrapperRef.current.contains(event.target)) return;
-    this.props.close();
+    this.props.onClose();
   }
 
   setYoutubeId = (youtubeId) => () => this.setState({ youtubeId });
@@ -183,7 +183,7 @@ class DetailView extends React.Component {
             <div key={i}>
               <div style={{ marginLeft: 16 }}>
                 <h5 style={{ marginTop: 0, marginBottom: 4 }}>{c.for.name} by {c.by.name}</h5>
-                <p style={{ marginTop: 0, marginBottom: 4 }}>{c.content}</p>
+                <p style={{ marginTop: 0, marginBottom: 4, whiteSpace: 'pre-wrap' }}>{c.content}</p>
               </div>
             </div>
           ))}
@@ -195,7 +195,7 @@ class DetailView extends React.Component {
 
 DetailView.propTypes = {
   marker: PropTypes.object,
-  close: PropTypes.func.isRequired
+  onClose: PropTypes.func.isRequired
 };
 
 export default DetailView;

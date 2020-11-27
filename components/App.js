@@ -18,6 +18,8 @@ class App extends React.Component {
   toggleConvertKit = () =>
     this.setState({ showConvertKit: !this.state.showConvertKit });
 
+  setMarker = marker => this.setState({ marker });
+
   render() {
     return (
       <>
@@ -122,7 +124,7 @@ class App extends React.Component {
               alignItems: "center",
               backgroundColor: colors.white,
               width: "100vw",
-              height: "100vh",
+              height: this.state.marker ? null : "100vh",
               color: colors.night,
             }}
           >
@@ -133,7 +135,7 @@ class App extends React.Component {
               </Typist>
             </div>
 
-            <MapChart />
+            <MapChart setMarker={this.setMarker} />
             <script data-uid="dbdc7c9d00" />
             <IconButton
               onClick={this.toggleConvertKit}
