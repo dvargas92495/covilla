@@ -46,7 +46,8 @@ class MapChart extends React.Component {
                       default: {
                         fill: colors.washed,
                         stroke: colors.washedDarker,
-                        stokeWidth: "0.25px"
+                        stokeWidth: "0.25px",
+                        outline: "none",
                       },
                       hover: {
                         fill: "#C1DEE7",
@@ -66,14 +67,14 @@ class MapChart extends React.Component {
               <Marker key={location} coordinates={coordinates}>
                 {isBefore(end_date) ? (
                   <circle
-                    r={4}
+                    r={6}
                     fill={colors.night}
                     onClick={this.setMarker(location)}
                     style={{ cursor: "pointer" }}
                   />
                 ) : isAfter(start_date) ? (
                   <circle
-                    r={4}
+                    r={6}
                     fill={colors.washedBlue}
                     onClick={this.setMarker(location)}
                     style={{ cursor: "pointer" }}
