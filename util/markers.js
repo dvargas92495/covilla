@@ -28,7 +28,7 @@ export default {
   "Oak Park, Michigan": {
     start_date: "08/28/2020",
     end_date: "09/26/2020",
-    label: "Sept 2020",
+    label: "Sep 2020",
     location: "Oak Park, Michigan",
     coordinates: [-83.1827, 42.4595],
     people: [

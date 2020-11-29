@@ -29,7 +29,7 @@ class App extends React.Component {
             minHeight: "100vh",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
+            justifyContent: "start",
             alignItems: "center",
           }}
         >
@@ -124,12 +124,26 @@ class App extends React.Component {
               alignItems: "center",
               backgroundColor: colors.white,
               width: "100vw",
-              height: this.state.marker ? null : "100vh",
+              
               color: colors.night,
             }}
           >
-            <h1 style={{ paddingTop: "2.7rem" }}>covilla</h1>
-            <div style={{ padding: "0 4rem", textAlign: "center" }}>
+            <h1
+              style={{
+                paddingTop: "2.7rem",
+                fontSize: this.state.marker ? "100%" : "200%",
+                transition: "font-size 0.5s ease-in-out",
+             }}
+            >
+              covilla
+            </h1>
+            <div
+              style={{
+                padding: "0 4rem",
+                textAlign: "center",
+                fontSize: this.state.marker ? "50%" : "100%",
+                transition: "font-size 0.5s ease-in-out"
+              }}>
               <Typist cursor={{ show: false }}>
                 <span>nomads living month-to-month in different cities.</span>
               </Typist>
