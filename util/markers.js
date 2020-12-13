@@ -137,5 +137,29 @@ export default {
     haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('01/10/2021')) && dateOf(a.date).isBefore(dateOf('02/07/2021'))),
     videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('01/10/2021')) && dateOf(a.date).isBefore(dateOf('02/07/2021'))),
     podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('01/10/2021')) && dateOf(a.date).isBefore(dateOf('02/07/2021')))
+  },
+  "Austin, Texas": {
+    start_date: "02/07/2021",
+    end_date: "03/07/2021",
+    label: "Feb 2021",
+    location: "Austin, Texas",
+    coordinates: [-97.7219696, 30.2798459],
+    people: [
+      people.Abigail,
+      people.Daysi,
+      people.Diann,
+      people.Eliza,
+      people.Kenny,
+      people.Matt,
+      people.Nikhil,
+      people.Sowmya,
+      people.Sravya,
+      people.Tayherr,
+      people.Vargas,
+    ],
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('02/08/2021')) && dateOf(a.date).isBefore(dateOf('03/08/2021'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('02/08/2021')) && dateOf(a.date).isBefore(dateOf('03/08/2021'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('02/08/2021')) && dateOf(a.date).isBefore(dateOf('03/08/2021'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('02/08/2021')) && dateOf(a.date).isBefore(dateOf('03/08/2021')))
   }
 };
