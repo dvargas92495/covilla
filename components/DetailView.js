@@ -22,7 +22,7 @@ class DetailView extends React.Component {
 
   handleClickOutside = (event) => {
     if (this.wrapperRef.current && this.wrapperRef.current.contains(event.target)) return;
-    this.props.onClose();
+    this.props.setMarker();
   }
 
   setYoutubeId = (youtubeId) => () => this.setState({ youtubeId });
@@ -195,7 +195,7 @@ class DetailView extends React.Component {
 
 DetailView.propTypes = {
   marker: PropTypes.object,
-  onClose: PropTypes.func.isRequired
+  setMarker: PropTypes.func.isRequired
 };
 
 export default DetailView;

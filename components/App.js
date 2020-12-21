@@ -6,6 +6,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import CancelIcon from "@material-ui/icons/Cancel";
 import { colors } from "../util/styles";
 import Typist from "react-typist";
+import DetailView from "./DetailView";
 
 class App extends React.Component {
   constructor(props) {
@@ -149,7 +150,8 @@ class App extends React.Component {
               </Typist>
             </div>
 
-            <MapChart setMarker={this.setMarker} />
+            <MapChart marker={this.state.marker} setMarker={this.setMarker} />
+            <DetailView marker={this.state.marker} setMarker={this.setMarker} />
             <script data-uid="dbdc7c9d00" />
             <IconButton
               onClick={this.toggleConvertKit}

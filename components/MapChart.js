@@ -7,7 +7,6 @@ import {
   Marker,
 } from "react-simple-maps";
 import markers from "../util/markers";
-import DetailView from "./DetailView";
 import { colors } from "../util/styles";
 import { isAfter, isBefore } from "../util/helpers";
 
@@ -16,22 +15,15 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 class MapChart extends React.Component {
   constructor(props, context) {
     super(props, context);
-    this.state = {};
   }
 
-  setMarker = (marker) => () => {
-    this.setState({ marker });
-    this.props.setMarker(marker);
-  };
-
   render() {
-    const marker = markers[this.state.marker];
     return (
       <>
         <ComposableMap width={1200} projection="geoAlbersUsa"
           style={{
             transition: "width 0.5s ease-in-out",
-            width: marker ? '300px' : '1000px'
+            width: this.props.marker ? '300px' : '1000px'
           }}
         >
           <Geographies geography={geoUrl}>
@@ -63,57 +55,61 @@ class MapChart extends React.Component {
             )}
           </Geographies>
           {Object.values(markers).map(
-            ({ location, coordinates, label, start_date, end_date }) => (
-              <Marker key={location} coordinates={coordinates}>
-                {isBefore(end_date) ? (
-                  <circle
-                    r={6}
-                    fill={colors.night}
-                    onClick={this.setMarker(location)}
-                    style={{ cursor: "pointer" }}
-                  />
-                ) : isAfter(start_date) ? (
-                  <circle
-                    r={6}
-                    fill={colors.washedBlue}
-                    onClick={this.setMarker(location)}
-                    style={{ cursor: "pointer" }}
-                  />
-                ) : (
-                      <text
-                        textAnchor="middle"
-                        style={{
-                          fontSize: 18,
-                          fill: colors.black,
-                          cursor: "pointer",
-                        }}
-                        onClick={this.setMarker(location)}
-                      >
-                        &#9733;
-                      </text>
-                    )}
-                <text
-                  textAnchor="middle"
-                  y={24}
-                  style={{
-                    fontFamily: "system-ui",
-                    fontSize: 12,
-                    fill: colors.black,
-                  }}
-                >
-                  {label}
-                </text>
-              </Marker>
+            (marker) => {
+              const { location, coordinates, label, start_date, end_date } = marker;
+              return (
+                <Marker key={location} coordinates={coordinates}>
+                  {isBefore(end_date) ? (
+                    <circle
+                      r={6}
+                      fill={colors.night}
+                      onClick={() => this.props.setMarker(marker)}
+                      style={{ cursor: "pointer" }}
+                    />
+                  ) : isAfter(start_date) ? (
+                    <circle
+                      r={6}
+                      fill={colors.washedBlue}
+                      onClick={() => this.props.setMarker(marker)}
+                      style={{ cursor: "pointer" }}
+                    />
+                  ) : (
+                        <text
+                          textAnchor="middle"
+                          style={{
+                            fontSize: 18,
+                            fill: colors.black,
+                            cursor: "pointer",
+                          }}
+                          onClick={() => this.props.setMarker(marker)}
+                        >
+                          &#9733;
+                        </text>
+                      )}
+                  <text
+                    textAnchor="middle"
+                    y={24}
+                    style={{
+                      fontFamily: "system-ui",
+                      fontSize: 12,
+                      fill: colors.black,
+                    }}
+                  >
+                    {label}
+                  </text>
+                </Marker>
+                );
+              }
             )
-          )}
+          }
         </ComposableMap>
-        <DetailView marker={marker} onClose={this.setMarker()} />
       </>
     );
   }
 }
 
 MapChart.propTypes = {
+  marker: PropTypes.object,
   setMarker: PropTypes.func.isRequired
 };
 
