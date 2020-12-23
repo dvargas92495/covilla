@@ -35,9 +35,22 @@ class DetailView extends React.Component {
 
   render() {
     const marker = this.props.marker;
-    if (!marker) return <div />;
+    if (!marker) return <div 
+      ref={this.wrapperRef}
+      style={{
+        "opacity" : "0.0"
+      }}/>;
     return (
-      <div ref={this.wrapperRef}>
+      <div
+        ref={this.wrapperRef}
+        style={{
+          "top": "400px",
+          "position": "absolute",
+          "opacity": "1.0",
+          "transition": "opacity 1.0s ease-in-out",
+          "transition-delay": "0.5s"
+        }}
+        >
         <div style={{ "textAlign": "center" }}>
           <h1>{marker.location}</h1>
           <h2>{marker.label}</h2>
