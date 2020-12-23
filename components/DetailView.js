@@ -36,7 +36,6 @@ class DetailView extends React.Component {
   render() {
     const marker = this.props.marker;
     if (!marker) return <div 
-      ref={this.wrapperRef}
       style={{
         "opacity" : "0.0"
       }}/>;
