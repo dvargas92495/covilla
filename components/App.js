@@ -158,8 +158,6 @@ class App extends React.Component {
                 style={{
                   padding: "0 4rem",
                   textAlign: "center",
-                  //fontSize: this.state.marker ? "50%" : "100%",
-                  //transition: "font-size 0.5s ease-in-out"
                 }}>
                 <Typist cursor={{ show: false }}>
                   <span>nomads living month-to-month in different cities.</span>
