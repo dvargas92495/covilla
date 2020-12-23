@@ -22,8 +22,7 @@ class MapChart extends React.Component {
       <>
         <ComposableMap width={1200} projection="geoAlbersUsa"
           style={{
-            //transition: "width 0.5s ease-in-out",
-            width: '1000px'//this.props.marker ? '300px' : '1000px'
+            width: '1000px'
           }}
         >
           <Geographies geography={geoUrl}>
