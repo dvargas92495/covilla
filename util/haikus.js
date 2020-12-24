@@ -258,4 +258,113 @@ Appreciation
 Expert communication
 Loves Corporations`
   },
+  {
+    by: people.Sravya,
+    for: people.Ameet,
+    date: "12/18/2020",
+    content: `Give a man a fish
+And I guess he has a fish 
+Seems kinda lame though 
+
+Teach a man to fish,
+Give the man a burrito,
+And he’s gonna thrive`
+  },
+  {
+    by: people.Ameet,
+    for: people.Jeffrey,
+    date: "12/18/2020",
+    content: `I was once heathen
+But then I joined covilla
+Now I am: Team Jeff
+
+Do you ever ask?
+What can bring joy to your world?
+I tell you: Team Jeff
+
+We're all born knowing
+The truth that without "Ameet"
+You can't spell "Team Jeff" 
+
+
+There is the Dream Team
+There's also the A-Team. But
+The best team? Team Jeff`
+  },
+  {
+    by: people.Jeffrey,
+    for: people.Vargas,
+    date: "12/18/2020",
+    content: `My firstest Vargas
+While you're not the best one
+My friend, you're the best`
+  },
+  {
+    by: people.Vargas,
+    for: people.Nikhil,
+    date: "12/18/2020",
+    content: `As an example
+Can be too much to handle
+Drugs, he has ample
+
+As an example
+Girlfriend acts like a damsel
+Beer Pong's a gamble
+
+As an example
+His friendship's on my mantle
+Constantly rambles
+
+As an example
+A role model to Daniel
+My mess, he tackles
+
+As an example
+Kindness I want to channel
+Impact's substantial`
+  },
+  {
+    by: people.Nikhil,
+    for: people.DannyV,
+    date: "12/18/2020",
+    content: `Red white and blue oreos,
+Pepper jack cheese, Arnolds tea,
+Stop taking my food
+
+High swipe rate and low kill rate
+Daniel Vargas you are
+David Vargas Two
+
+If nothing works out
+And seven fifty works, come to
+DeepBench, it's bussing
+
+Big A O C fan
+Bigger socialist fan
+Middle east for me
+
+Hearing you rant is
+More fun than watching fox news
+No cap, no homo`
+  },
+  {
+    by: people.DannyV,
+    for: people.Daysi,
+    date: "12/18/2020",
+    content: `We know drakes the goat
+But you like the long talking
+That’s why you single`
+  },
+  {
+    by: people.Daysi,
+    for: people.Sravya,
+    date: "12/18/2020",
+    content: `My mouth on fire 
+No one to blame but myself 
+Vargaaaaaas bring water
+
+Little miss sunshine
+Mortal enemy or pal?
+Hashtag girls who code`
+  },
 ];
