@@ -154,9 +154,9 @@ export default {
     photo: "/images/people/Vargas.jpg",
     url: "https://twitter.com/dvargas92495"
   },
-  "Vineel": {
-    name: "Vineel",
-    photo: "/images/people/Vineel.jpg",
+  "Vinny": {
+    name: "Vinny",
+    photo: "/images/people/Vinny.jpg",
     url: "https://www.instagram.com/vinnychak"
   }
 };
