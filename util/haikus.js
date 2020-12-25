@@ -259,6 +259,18 @@ Expert communication
 Loves Corporations`
   },
   {
+    by: people.Daysi,
+    for: people.Sravya,
+    date: "12/18/2020",
+    content: `My mouth on fire 
+No one to blame but myself 
+Vargaaaaaas bring water
+
+Little miss sunshine
+Mortal enemy or pal?
+Hashtag girls who code`
+  },
+  {
     by: people.Sravya,
     for: people.Ameet,
     date: "12/18/2020",
@@ -353,17 +365,5 @@ No cap, no homo`
     content: `We know drakes the goat
 But you like the long talking
 That’s why you single`
-  },
-  {
-    by: people.Daysi,
-    for: people.Sravya,
-    date: "12/18/2020",
-    content: `My mouth on fire 
-No one to blame but myself 
-Vargaaaaaas bring water
-
-Little miss sunshine
-Mortal enemy or pal?
-Hashtag girls who code`
   },
 ];
