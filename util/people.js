@@ -144,6 +144,11 @@ export default {
     photo: "/images/people/Trinh.jpg",
     url: "https://www.instagram.com/mikerific"
   },
+  "Ubez": {
+    name: "Ubez",
+    photo: "/images/people/Ubez.jpg",
+    url: "https://www.instagram.com/diannhuynh"
+  },
   "Vargas": {
     name: "Vargas",
     photo: "/images/people/Vargas.jpg",

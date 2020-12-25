@@ -105,7 +105,7 @@ export default {
       people.Phil,
       people.Sravya,
       people.Vargas,
-      people.Vinny,
+      people.Vinny
     ],
     articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020'))),
     haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('11/24/2020')) && dateOf(a.date).isBefore(dateOf('12/21/2020'))),
@@ -133,7 +133,8 @@ export default {
       people.Rianna,
       people.Sravya,
       people.Tayherr,
-      people.Vargas,
+      people.Ubez,
+      people.Vargas
     ],
     articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('01/10/2021')) && dateOf(a.date).isBefore(dateOf('02/07/2021'))),
     haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('01/10/2021')) && dateOf(a.date).isBefore(dateOf('02/07/2021'))),
@@ -156,7 +157,8 @@ export default {
       people.Nikhil,
       people.Sravya,
       people.Tayherr,
-      people.Vargas,
+      people.Ubez,
+      people.Vargas
     ],
     articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('02/08/2021')) && dateOf(a.date).isBefore(dateOf('03/08/2021'))),
     haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('02/08/2021')) && dateOf(a.date).isBefore(dateOf('03/08/2021'))),
