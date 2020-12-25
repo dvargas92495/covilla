@@ -1,7 +1,7 @@
 export default {
-  "Abigail": {
-    name: "Abigail",
-    photo: "/images/people/Abigail.jpg",
+  "Abbey": {
+    name: "Abbey",
+    photo: "/images/people/Abbey.jpg",
     url: "https://www.instagram.com/abbeyruss"
   },
   "Alisha": {
@@ -44,6 +44,11 @@ export default {
     photo: "/images/people/Chandler.jpg",
     url: "https://www.instagram.com/chanther"
   },
+  "Christina": {
+    name: "Christina",
+    photo: "/images/people/Christina.jpg",
+    url: "https://www.instagram.com/cristinauri6e"
+  },
   "Danny": {
     name: "Danny",
     photo: "/images/people/Danny.jpg",
@@ -74,9 +79,9 @@ export default {
     photo: "/images/people/Erica.jpg",
     url: "https://www.instagram.com/ericamaybaum"
   },
-  "Jeffrey": {
-    name: "Jeffrey",
-    photo: "/images/people/Jeffrey.png",
+  "Jeff": {
+    name: "Jeff",
+    photo: "/images/people/Jeff.png",
     url: "https://www.instagram.com/jeffreywkim"
   },
   "Joel": {
@@ -103,6 +108,11 @@ export default {
     name: "Parth",
     photo: "/images/people/Parth.jpg",
     url: "https://medium.com/@shahparth31"
+  },
+  "Phil": {
+    name: "Phil",
+    photo: "/images/people/Phil.jpg",
+    url: "https://www.instagram.com/slowcherned"
   },
   "Rianna": {
     name: "Rianna",
@@ -138,5 +148,10 @@ export default {
     name: "Vargas",
     photo: "/images/people/Vargas.jpg",
     url: "https://twitter.com/dvargas92495"
+  },
+  "Vineel": {
+    name: "Vineel",
+    photo: "/images/people/Vineel.jpg",
+    url: "https://www.instagram.com/vinnychak"
   }
 };

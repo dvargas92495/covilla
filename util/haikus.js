@@ -104,14 +104,14 @@ Churches vocal range`
   },
   {
     by: people.Daysi,
-    for: people.Abigail,
+    for: people.Abbey,
     date: "11/06/2020",
     content: `Bang bang that’s sexy
 Is he European though?
 Tik tok GenZ rocks`
   },
   {
-    by: people.Abigail,
+    by: people.Abbey,
     for: people.Vargas,
     date: "11/06/2020",
     content: `Vargas you pong king 
@@ -272,7 +272,7 @@ And he’s gonna thrive`
   },
   {
     by: people.Ameet,
-    for: people.Jeffrey,
+    for: people.Jeff,
     date: "12/18/2020",
     content: `I was once heathen
 But then I joined covilla
@@ -286,13 +286,12 @@ We're all born knowing
 The truth that without "Ameet"
 You can't spell "Team Jeff" 
 
-
 There is the Dream Team
 There's also the A-Team. But
 The best team? Team Jeff`
   },
   {
-    by: people.Jeffrey,
+    by: people.Jeff,
     for: people.Vargas,
     date: "12/18/2020",
     content: `My firstest Vargas
