@@ -24,10 +24,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-
         <div
           style={{
-            minHeight: "100vh",
             display: "flex",
             flexDirection: "column",
             justifyContent: "start",
@@ -134,6 +132,8 @@ class App extends React.Component {
               transform: this.state.marker ? "scale(0.5)" : "scale(1.0)",
               "-moz-transform":  this.state.marker ? "scale(0.5)" : "scale(1.0)",
               transition: "transform 0.5s ease-in-out",
+              width: "95%",
+              maxWidth: "1000px"
             }}
           >
           <div
