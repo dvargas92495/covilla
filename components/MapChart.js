@@ -20,9 +20,9 @@ class MapChart extends React.Component {
   render() {
     return (
       <>
-        <ComposableMap width={1200} projection="geoAlbersUsa"
+        <ComposableMap width={1000} projection="geoAlbersUsa"
           style={{
-            width: '1000px'
+            width: '100%'
           }}
         >
           <Geographies geography={geoUrl}>

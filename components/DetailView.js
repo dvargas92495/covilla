@@ -47,7 +47,10 @@ class DetailView extends React.Component {
           position: 'absolute',
           opacity: 1,
           transition: 'opacity 1.0s ease-in-out',
-          transitionDelay: '0.5s'
+          transitionDelay: '0.5s',
+          width: "95%",
+          maxWidth: "500px",
+          fontSize: "16px"
         }}
       >
         <div style={{ textAlign: 'center' }}>
@@ -97,8 +100,8 @@ class DetailView extends React.Component {
                 textDecoration: 'none',
                 display: 'flex',
                 cursor: 'pointer',
-                fontSize: 12,
-                justifyContent: 'center'
+                fontSize: 16,
+                justifyContent: 'left'
               }}
             >
               <div className={styles.icon}>
@@ -127,7 +130,7 @@ class DetailView extends React.Component {
                 backgroundColor: '#00000080',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center',
+                justifyContent: 'left',
                 zIndex: 100,
               }}
             >
@@ -152,8 +155,8 @@ class DetailView extends React.Component {
               style={{
                 display: 'flex',
                 cursor: 'pointer',
-                fontSize: 12,
-                justifyContent: 'center'
+                fontSize: 16,
+                justifyContent: 'left'
               }}
               onClick={this.setYoutubeId(c.url.substring(30))}
             >
@@ -180,8 +183,8 @@ class DetailView extends React.Component {
                 textDecoration: 'none',
                 display: 'flex',
                 cursor: 'pointer',
-                fontSize: 12,
-                justifyContent: 'center'
+                fontSize: 16,
+                justifyContent: 'left'
               }}
             >
               <div className={styles.icon}>
@@ -198,15 +201,16 @@ class DetailView extends React.Component {
           ))}
           <div
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: 10
+              display: 'block',
+              fontSize: 16
             }}
           >
             {marker.haikus.map((c, i) => (
-              <div key={i} style={{ display: 'inline-block', margin: 12, textAlign: 'center' }}>
-                <h5 style={{ marginTop: 0 }}>{c.for.name} by {c.by.name}</h5>
+              <div key={i} >
+                <div class='haiku-title' style={{ paddingTop: "5vh" }}>
+                  <h5 style={{ margin: 0, fontSize: 20 }}>{c.for.name}</h5>
+                  <h6 style={{ margin:0, fontSize: 16, fontVariant: "small-caps", textTransform: "lowercase", fontWeight: "normal" }}>By {c.by.name}</h6>
+                </div>
                 <p style={{ whiteSpace: 'pre-wrap' }}>{c.content}</p>
               </div>
             ))}
