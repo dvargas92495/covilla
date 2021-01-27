@@ -112,6 +112,11 @@ class App extends React.Component {
             />
             <meta name="theme-color" content="#ffffff" />
             <script async src="https://prodigious-trader-7332.ck.page/dbdc7c9d00/index.js" />
+            <style>
+              {`html {
+  overflow-x: hidden;
+}`}
+            </style>
           </Head>
 
           <main
