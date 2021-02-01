@@ -149,9 +149,11 @@ export default {
     coordinates: [-97.7219696, 30.2798459],
     people: [
       people.Abbey,
+      people.Ameet,
       people.Daysi,
       people.Diann,
       people.Eliza,
+      people.Katrina,
       people.Kenny,
       people.Matt,
       people.Nikhil,
@@ -164,5 +166,31 @@ export default {
     haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('02/08/2021')) && dateOf(a.date).isBefore(dateOf('03/08/2021'))),
     videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('02/08/2021')) && dateOf(a.date).isBefore(dateOf('03/08/2021'))),
     podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('02/08/2021')) && dateOf(a.date).isBefore(dateOf('03/08/2021')))
+  },
+  "New Orleans, Louisiana": {
+    start_date: "03/07/2021",
+    end_date: "04/03/2021",
+    label: "Feb 2021",
+    location: "New Orleans, Louisiana",
+    coordinates: [-97.7219696, 30.2798459],
+    people: [
+      people.Abbey,
+      people.Anubhav,
+      people.Daysi,
+      people.Diann,
+      people.Eliza,
+      people.Kenny,
+      people.Matt,
+      people.Nikhil,
+      people.Rianna,
+      people.Sravya,
+      people.Tayherr,
+      people.Ubez,
+      people.Vargas
+    ],
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('03/08/2021')) && dateOf(a.date).isBefore(dateOf('04/04/2021'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('03/08/2021')) && dateOf(a.date).isBefore(dateOf('04/04/2021'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('03/08/2021')) && dateOf(a.date).isBefore(dateOf('04/04/2021'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('03/08/2021')) && dateOf(a.date).isBefore(dateOf('04/04/2021')))
   }
 };

@@ -34,6 +34,11 @@ export default {
     photo: "/images/people/Ben.jpg",
     url: "https://medium.com/@bakerben70"
   },
+  "BenC": {
+    name: "Ben",
+    photo: "/images/people/BenC.jpg",
+    url: "https://www.instagram.com/benclaman"
+  },
   "Colin": {
     name: "Colin",
     photo: "/images/people/Colin.jpg",
@@ -88,6 +93,11 @@ export default {
     name: "Joel",
     photo: "/images/people/Joel.jpg",
     url: "https://twitter.com/gustafjt"
+  },
+  "Katrina": {
+    name: "Katrina",
+    photo: "/images/people/Katrina.jpg",
+    url: "https://www.instagram.com/klhui"
   },
   "Kenny": {
     name: "Kenny",
