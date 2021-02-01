@@ -170,7 +170,7 @@ export default {
   "New Orleans, Louisiana": {
     start_date: "03/07/2021",
     end_date: "04/03/2021",
-    label: "Feb 2021",
+    label: "Mar 2021",
     location: "New Orleans, Louisiana",
     coordinates: [-90.0738179, 29.9758633],
     people: [
