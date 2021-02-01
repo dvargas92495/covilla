@@ -172,7 +172,7 @@ export default {
     end_date: "04/03/2021",
     label: "Feb 2021",
     location: "New Orleans, Louisiana",
-    coordinates: [-97.7219696, 30.2798459],
+    coordinates: [-90.0738179, 29.9758633],
     people: [
       people.Abbey,
       people.Anubhav,

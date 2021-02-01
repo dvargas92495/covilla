@@ -32,11 +32,16 @@ export default [
   {
     title: "Vocals with Locals: Raleigh, NC",
     url: "https://open.spotify.com/episode/2DTzhk5auVfQHnncIxFfh6?si=VHyV_85ETBmnaqfVpAYaMw",
-    date: "12/17/2020",
+    date: "11/22/2020",
   },
   {
     title: "Covilla Travels: Raleigh, NC",
     url: "https://open.spotify.com/episode/3Bpm2Q3fCFz48drIdqXZsl?si=JStBYuYGSJ-PzG3NpKUbMA",
-    date: "12/20/2020",
+    date: "11/21/2020",
+  },
+  {
+    title: "Vocals with Locals: San Diego, CA",
+    url: "https://open.spotify.com/episode/3BbrJKJb0H6oSDTMgpA7P4?si=K-l14ElCSqKJe5Tng6L5qQ",
+    date: "12/17/2020",
   },
 ];
