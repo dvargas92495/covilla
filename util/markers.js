@@ -153,7 +153,6 @@ export default {
       people.Daysi,
       people.Diann,
       people.Eliza,
-      people.Katrina,
       people.Kenny,
       people.Matt,
       people.Nikhil,

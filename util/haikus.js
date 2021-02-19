@@ -366,4 +366,153 @@ No cap, no homo`
 But you like the long talking
 That’s why you single`
   },
+
+  {
+    by: people.Sravya,
+    for: people.Matt,
+    date: "02/05/2021",
+    content: `No no no no no!
+That is NOT how you do it
+Please let me Mattsplain
+
+Food never goes bad 
+Head bras are the newest fad
+And carbs make me sad`
+  },
+  {
+    by: people.Matt,
+    for: people.Vargas,
+    date: "02/05/2021",
+    content: `Unproductive cough
+Anosmia, fever, chills
+So glad you made it`
+  },
+  {
+    by: people.Vargas,
+    for: people.Tayherr,
+    date: "02/05/2021",
+    content: `Palantir Lover
+Guides Poker Like No Other
+Eskimo Brother
+
+Amazing Math Skill 
+Before molly, helped me still 
+"You were very Chill"
+
+Win, Achieve, Become 
+Let's get our Passive Income 
+Twitch Stream Til We're Numb`
+  },
+  {
+    by: people.Tayherr,
+    for: people.Anubhav,
+    date: "02/05/2021",
+    content: `Wife’s boyfriend said that
+Gorillas together strong
+Gme gang games gme gains`
+  },
+  {
+    by: people.Anubhav,
+    for: people.Kenny,
+    date: "02/05/2021",
+    content: `Get’s along with all.
+Will even bang if IQ,
+More than 85`
+  },
+  {
+    by: people.Kenny,
+    for: people.Daysi,
+    date: "02/05/2021",
+    content: `Queen of All Things Spice
+The one with the largest room
+Scratch that, reverse it.
+
+Daysi, not lazy.
+A role with more depth, than if
+Made by Scorsese
+
+Goals on the weekly.
+Notion template: perfected.
+Growth mindset: always.
+
+Alarm rings at 8.
+Snoozes for an hour more.
+Not now, Camp Daysi.`
+  },
+  {
+    by: people.Daysi,
+    for: people.Joel,
+    date: "02/05/2021",
+    content: `Sun down approaches
+Who am I? A cape? Blanket?
+Flames rise, he returns`
+  },
+  {
+    by: people.Joel,
+    for: people.Sravya,
+    date: "02/05/2021",
+    content: `Curious high school girls
+Will find their life role model
+In Sravya Does Math`
+  },
+  {
+    by: people.Chandler,
+    for: people.Eliza,
+    date: "02/05/2021",
+    content: `You like it clean but
+Ladybugs infest your room
+Deep first world problems
+
+The ladybug queen
+What would we do without you
+The covilla mom
+
+Ladybugs: your foe
+Cleanliness: your true desire
+Covilla: your home`
+  },
+  {
+    by: people.Eliza,
+    for: people.Diann,
+    date: "02/05/2021",
+    content: `Photoshoot master
+Maker of delicious drinks
+Mother of ube`
+  },
+  {
+    by: people.Rianna,
+    for: people.Anna,
+    date: "02/05/2021",
+    content: `Only want ube 
+But she runs so far away
+She’ll love me one day 
+
+Mechanical keys
+Wearing sketchy black hoodies
+High noons for the plebes`
+  },
+  {
+    by: people.Anna,
+    for: people.Nikhil,
+    date: "02/05/2021",
+    content: `Nikhil like the coin
+Drug box, Bollywood movies 
+Dining room buddy`
+  },
+  {
+    by: people.Nikhil,
+    for: people.Rianna,
+    date: "02/05/2021",
+    content: `Private equity,
+Nail painter, billiards baller,
+House mom, you should chill
+
+Won a lottery
+Sugar mom to gold digger
+Miss Shah, case and point
+
+Steps to look better
+Make your friends fatter than you
+Make cinnamon rolls`
+  }
 ];
