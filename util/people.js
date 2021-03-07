@@ -24,6 +24,11 @@ export default {
     photo: "/images/people/Anna.jpg",
     url: "https://www.instagram.com/annaebair"
   },
+  "Anthony": {
+    name: "Anthony",
+    photo: "/images/people/anthony.jfif",
+    url: "https://www.instagram.com/anthonyv22298",
+  },
   "Anubhav": {
     name: "Anubhav",
     photo: "/images/people/Anubhav.jpg",
@@ -103,6 +108,11 @@ export default {
     name: "Kenny",
     photo: "/images/people/Kenny.jpg",
     url: "https://twitter.com/futurekennysf"
+  },
+  "KennyD": {
+    name: "Kenny",
+    photo: "/images/people/KennyD.jpg",
+    url: "https://www.facebook.com/iPM13"
   },
   "Matt": {
     name: "Matt",

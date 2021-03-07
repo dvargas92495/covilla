@@ -53,7 +53,7 @@ class MapChart extends React.Component {
               </>
             )}
           </Geographies>
-          {Object.values(markers).map(
+          {markers.map(
             (marker) => {
               const { location, coordinates, label, start_date, end_date } = marker;
               return (
