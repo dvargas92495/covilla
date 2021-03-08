@@ -17,6 +17,11 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 class MapChart extends React.Component {
   constructor(props, context) {
     super(props, context);
+    this.state = {};
+  }
+
+  setHover = (location) => () => {
+    this.setState({ location });
   }
 
   render() {
@@ -66,6 +71,8 @@ class MapChart extends React.Component {
                       fill={colors.night}
                       onClick={() => this.props.setMarker(marker)}
                       style={{ cursor: "pointer" }}
+                      onMouseOver={this.setHover(location)}
+                      onMouseOut={this.setHover()}
                     />
                   ) : isAfter(start_date) ? (
                     <circle
@@ -73,6 +80,8 @@ class MapChart extends React.Component {
                       fill={colors.washedBlue}
                       onClick={() => this.props.setMarker(marker)}
                       style={{ cursor: "pointer" }}
+                      onMouseOver={this.setHover(location)}
+                      onMouseOut={this.setHover()}
                     />
                   ) : (
                         <text
@@ -83,21 +92,25 @@ class MapChart extends React.Component {
                             cursor: "pointer"
                           }}
                           onClick={() => this.props.setMarker(marker)}
+                          onMouseOver={this.setHover(location)}
+                          onMouseOut={this.setHover()}
                         >
                           &#9733;
                         </text>
                       )}
-                  <text
-                    textAnchor="middle"
-                    y={24}
-                    style={{
-                      fontFamily: "system-ui",
-                      fontSize: 12,
-                      fill: colors.black,
-                    }}
-                  >
-                    {label}
-                  </text>
+                  {this.state.location === location && (
+                    <text
+                      textAnchor="middle"
+                      y={24}
+                      style={{
+                        fontFamily: "system-ui",
+                        fontSize: 12,
+                        fill: colors.black,
+                      }}
+                    >
+                      {label}
+                    </text>
+                  )}
                 </Marker>
               );
             }
