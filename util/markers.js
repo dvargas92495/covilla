@@ -152,6 +152,7 @@ export default [
       people.Phil,
       people.Sravya,
       people.Vargas,
+      people.Vinny
     ],
     articles: articles.filter(
       (a) =>
@@ -231,6 +232,8 @@ export default [
       people.Daysi,
       people.Diann,
       people.Eliza,
+      people.Jacob,
+      people.LeAnn,
       people.Kenny,
       people.Matt,
       people.Nikhil,
@@ -238,6 +241,7 @@ export default [
       people.Tayherr,
       people.Ubez,
       people.Vargas,
+      people.Vinny
     ],
     articles: articles.filter(
       (a) =>

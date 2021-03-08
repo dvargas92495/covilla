@@ -94,6 +94,11 @@ export default {
     photo: "/images/people/Erica.webp",
     url: "https://www.instagram.com/ericamaybaum"
   },
+  "Jacob": {
+    name: "Jacob",
+    photo: "/images/people/Jacob.webp",
+    url: "https://www.instagram.com/jeffreywkim"
+  },
   "Jeff": {
     name: "Jeff",
     photo: "/images/people/Jeff.webp",
@@ -108,6 +113,11 @@ export default {
     name: "Justin",
     photo: "/images/people/Justin.webp",
     url: "https://www.instagram.com/justin__gong"
+  },
+  "LeAnn": {
+    name: "LeAnn",
+    photo: "/images/people/LeAnn.webp",
+    url: "https://www.instagram.com/leann.huynh"
   },
   "Katrina": {
     name: "Katrina",
