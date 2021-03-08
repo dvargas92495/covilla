@@ -131,46 +131,42 @@ class App extends React.Component {
               color: colors.night,
             }}
           >
-          <div
-            style={{
-              "transform-origin": "top center",
-              transform: this.state.marker ? "scale(0.5)" : "scale(1.0)",
-              "-moz-transform":  this.state.marker ? "scale(0.5)" : "scale(1.0)",
-              transition: "transform 0.5s ease-in-out",
-              width: "95%",
-              maxWidth: "1000px"
-            }}
-          >
-          <div
-            id="topSection"
-            style={{
-              paddingTop: "2.7rem",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "start",
-              gap: "1ch",
-               }}
+            <div
+              style={{
+                "transformOrigin": "top center",
+                transform: this.state.marker ? "scale(0.5)" : "scale(1.0)",
+                "MozTransform": this.state.marker ? "scale(0.5)" : "scale(1.0)",
+                transition: "transform 0.5s ease-in-out",
+                width: "95%",
+                maxWidth: "1000px"
+              }}
             >
-              <h1
-                style={{
-                  paddingTop: "2.7rem"
-               }}
-              >
-                covilla
-              </h1>
               <div
+                id="topSection"
                 style={{
-                  padding: "0 4rem",
-                  textAlign: "center",
-                }}>
-                <Typist cursor={{ show: false }}>
-                  <span>nomads living month-to-month in different cities.</span>
-                </Typist>
-              </div>
+                  paddingTop: "2.7rem",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "start",
+                  gap: "1ch",
+                }}
+              >
+                <h1>
+                  covilla
+                </h1>
+                <div
+                  style={{
+                    padding: "0 4rem",
+                    textAlign: "center",
+                  }}>
+                  <Typist cursor={{ show: false }}>
+                    <span>nomads living month-to-month in different cities.</span>
+                  </Typist>
+                </div>
 
-              <MapChart marker={this.state.marker} setMarker={this.setMarker} />
-            </div>
+                <MapChart marker={this.state.marker} setMarker={this.setMarker} />
+              </div>
             </div>
             <DetailView marker={this.state.marker} setMarker={this.setMarker} />
             <script data-uid="dbdc7c9d00" />

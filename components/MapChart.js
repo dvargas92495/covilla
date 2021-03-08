@@ -5,10 +5,12 @@ import {
   Geographies,
   Geography,
   Marker,
+  Line
 } from "react-simple-maps";
 import markers from "../util/markers";
 import { colors } from "../util/styles";
 import { isAfter, isBefore } from "../util/helpers";
+import styles from '../util/SimpleMaps.module.css';
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
@@ -78,7 +80,7 @@ class MapChart extends React.Component {
                           style={{
                             fontSize: 18,
                             fill: colors.black,
-                            cursor: "pointer",
+                            cursor: "pointer"
                           }}
                           onClick={() => this.props.setMarker(marker)}
                         >
@@ -97,10 +99,23 @@ class MapChart extends React.Component {
                     {label}
                   </text>
                 </Marker>
-                );
-              }
+              );
+            }
+          )}
+          {markers.map((m, index) => {
+            if (index + 1 === markers.length) return;
+            return (
+              <Line
+                key={index}
+                to={m.coordinates}
+                from={markers[index + 1].coordinates}
+                stroke={colors.night}
+                strokeWidth={1}
+                strokeLinecap="round"
+                className={styles.LineStyle}
+              />
             )
-          }
+          })}
         </ComposableMap>
       </>
     );

@@ -207,9 +207,9 @@ class DetailView extends React.Component {
           >
             {marker.haikus.map((c, i) => (
               <div key={i} >
-                <div class='haiku-title' style={{ paddingTop: "5vh" }}>
+                <div className='haiku-title' style={{ paddingTop: "5vh" }}>
                   <h5 style={{ margin: 0, fontSize: 20 }}>{c.for.name}</h5>
-                  <h6 style={{ margin:0, fontSize: 16, fontVariant: "small-caps", textTransform: "lowercase", fontWeight: "normal" }}>By {c.by.name}</h6>
+                  <h6 style={{ margin: 0, fontSize: 16, fontVariant: "small-caps", textTransform: "lowercase", fontWeight: "normal" }}>By {c.by.name}</h6>
                 </div>
                 <p style={{ whiteSpace: 'pre-wrap' }}>{c.content}</p>
               </div>

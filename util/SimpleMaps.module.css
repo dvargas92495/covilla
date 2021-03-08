@@ -1,0 +1,23 @@
+/* .LineStyle {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+} */
+
+.LineStyle {
+	stroke-dasharray: 10;
+	animation: dash 20s linear;
+	animation-iteration-count: infinite;
+  }
+  
+@keyframes dash {
+	to {
+		stroke-dashoffset: 1000;
+	}
+}
