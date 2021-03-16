@@ -300,6 +300,7 @@ export default [
     location: "Breckenridge, Colorado",
     coordinates: [-106.0417115, 39.5213447],
     people: [
+      people.Akhil,
       people.Aldair,
       people.Claman,
       people.Diann,
@@ -324,6 +325,7 @@ export default [
     location: "Denver, Colorado",
     coordinates: [-105.0440352, 39.7373205],
     people: [
+      people.Akhil,
       people.Alisha,
       people.Daysi,
       people.Diann,

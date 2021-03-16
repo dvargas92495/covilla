@@ -4,6 +4,11 @@ export default {
     photo: "/images/people/Abbey.webp",
     url: "https://www.instagram.com/abbeyruss"
   },
+  "Akhil": {
+    name: "Akhil",
+    photo: "/images/people/Akhil.webp",
+    url: "https://www.instagram.com/akeeezy"
+  },
   "Aldair": {
     name: "Aldair",
     photo: "/images/people/Aldair.webp",
@@ -31,7 +36,7 @@ export default {
   },
   "Anthony": {
     name: "Anthony",
-    photo: "/images/people/anthony.webp",
+    photo: "/images/people/Anthony.webp",
     url: "https://www.instagram.com/anthonyv22298",
   },
   "Anubhav": {
