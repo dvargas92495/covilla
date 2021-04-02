@@ -286,6 +286,7 @@ export default [
       people.Tayherr,
       people.Ubez,
       people.Vargas,
+      people.Vihar,
       people.Vinny
     ],
     articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('03/08/2021')) && dateOf(a.date).isBefore(dateOf('04/04/2021'))),
@@ -320,7 +321,7 @@ export default [
   },
   {
     start_date: "04/10/2021",
-    end_date: "05/10/2021",
+    end_date: "05/09/2021",
     label: "Apr '21",
     location: "Denver, Colorado",
     coordinates: [-105.0440352, 39.7373205],
@@ -337,9 +338,31 @@ export default [
       people.Ubez,
       people.Vargas
     ],
-    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('04/11/2021')) && dateOf(a.date).isBefore(dateOf('05/11/2021'))),
-    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('04/11/2021')) && dateOf(a.date).isBefore(dateOf('05/11/2021'))),
-    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('04/11/2021')) && dateOf(a.date).isBefore(dateOf('05/11/2021'))),
-    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('04/11/2021')) && dateOf(a.date).isBefore(dateOf('05/11/2021')))
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('04/11/2021')) && dateOf(a.date).isBefore(dateOf('05/10/2021'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('04/11/2021')) && dateOf(a.date).isBefore(dateOf('05/10/2021'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('04/11/2021')) && dateOf(a.date).isBefore(dateOf('05/10/2021'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('04/11/2021')) && dateOf(a.date).isBefore(dateOf('05/10/2021')))
+  },
+  {
+    start_date: "05/09/2021",
+    end_date: "06/06/2021",
+    label: "May '21",
+    location: "Salt Lake City, Utah",
+    coordinates: [-111.794130, 40.600850],
+    people: [
+      people.Daysi,
+      people.Diann,
+      people.Kenny,
+      people.Matt,
+      people.Nikhil,
+      people.Sravya,
+      people.Tayherr,
+      people.Ubez,
+      people.Vargas
+    ],
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('05/10/2021')) && dateOf(a.date).isBefore(dateOf('06/07/2021'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('05/10/2021')) && dateOf(a.date).isBefore(dateOf('06/07/2021'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('05/10/2021')) && dateOf(a.date).isBefore(dateOf('06/07/2021'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('05/10/2021')) && dateOf(a.date).isBefore(dateOf('06/07/2021')))
   }
 ]
