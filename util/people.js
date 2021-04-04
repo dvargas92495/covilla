@@ -204,6 +204,11 @@ export default {
     photo: "/images/people/Vargas.webp",
     url: "https://twitter.com/dvargas92495"
   },
+  "Vihar": {
+    name: "Vihar",
+    photo: "/images/people/Vihar.webp",
+    url: "https://www.instagram.com/vshah320"
+  },
   "Vinny": {
     name: "Vinny",
     photo: "/images/people/Vinny.webp",
