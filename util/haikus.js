@@ -522,5 +522,347 @@ Miss Shah, case and point
 Steps to look better
 Make your friends fatter than you
 Make cinnamon rolls`
-  }
+  },
+  {
+    by: people.Tayherr,
+    for: people.Matt,
+    date: "03/05/2021",
+    content: `Believe it or not
+The jolt-tron skeeve of a quartz
+Is semi-boloid
+
+Spurving bearings
+And logarithmic casing
+Can be hydrocoptic
+
+Tremmie waneshaft
+prefabulited cogspawn
+Enrich deltoid slots
+
+He’s the facts man 
+Sci bi dib dib yo da dub
+Dub yo dub da dub`
+  },
+  {
+    by: people.Matt,
+    for: people.Abbey,
+    date: "03/05/2021",
+    content: `Abigail Russell
+Wow. That's one line already
+Just need one more now
+
+Stir-fried broccoli
+PMing the Cockroaches
+And couch gang for life`
+  },
+  {
+    by: people.Abbey,
+    for: people.Daysi,
+    date: "03/05/2021",
+    content: `Death in the morning
+You and your bad taste. Betrayed.
+But that technique though`
+  },
+  {
+    by: people.Daysi,
+    for: people.Tayherr,
+    date: "03/05/2021",
+    content: `PLTR’s up
+Big data, bigger ideas
+Big chip stack daddy
+
+New startup idea
+Petal-a-ton or bust guys
+Always be peaking
+
+Taco Tuesday Man
+Austin’s number 1 fan but
+Let’s book Vegas now`
+  },
+  {
+    by: people.Sravya,
+    for: people.Kenny,
+    date: "03/05/2021",
+    content: `He used to be scared
+But now he feels safe knowing
+Texas cured COVID
+
+Death in the morning
+Weak party trolley drinker
+Sorry you’re old now 
+
+Kenny, we get it
+Your metabolism’s great
+But please, no cookies`
+  },
+  {
+    by: people.Kenny,
+    for: people.Nikhil,
+    date: "03/05/2021",
+    content: `Like the snow, fickle
+Like Ube’s urine, trickle
+Like the coin, nikhil
+
+Plays Slammo: no stress.
+Wins at Avalon? Good guess.
+In the sheets, plays chess. 
+
+Saturdays, now dry.
+Want some gummies? let’s get high
+Best parties: Dubai
+
+Facial hair. much care.
+Some squawks. Real talks. On night walks.
+Big flare. Always there.`
+  },
+  {
+    by: people.Nikhil,
+    for: people.Ameet,
+    date: "03/05/2021",
+    content: `Aspiring artist
+The burrito connoisseur
+Fisherman food blog
+
+After two houses
+I need you to do one thing
+Rank the Vargases
+
+When this is over
+And you start meeting clients
+Please keep the man bun`
+  },
+  {
+    by: people.Ameet,
+    for: people.Diann,
+    date: "03/05/2021",
+    content: `Home is everywhere
+Ube runs like wet nail paint
+there's no place like home`
+  },
+  {
+    by: people.Diann,
+    for: people.Vargas,
+    date: "03/05/2021",
+    content: `Abbey’s now taken
+Should we set up our siblings?
+New brother in law?`
+  },
+  {
+    by: people.Vargas,
+    for: people.Eliza,
+    date: "03/05/2021",
+    content: `Appetite Rivals
+She Flashed New York For Miles
+Humor I Idol
+
+Lying Morgana
+Always Helping Covilla
+She's Anti Nausea
+
+Hot Tub, Not a Pool
+Wished we were friends during school
+Girl Talks Like We're Cool`
+  },
+  {
+    by: people.Eliza,
+    for: people.Sravya,
+    date: "03/05/2021",
+    content: `I will stop drinking
+For two whole weeks, calories
+Orders chips and guac`
+  },
+  {
+    by: people.Sravya,
+    for: people.Diann,
+    date: "04/01/2021",
+    content: `Queen of all things nails,
+Cruising autonomous boats,
+Mother of Ube
+
+Most likely to be
+A tik tok influencer
+And bring this house fame!`
+  },
+  {
+    by: people.Diann,
+    for: people.Eliza,
+    date: "04/01/2021",
+    content: `Brrr it’s cold outside
+Let’s go home and tub instead 
+Tub: hard requirement
+
+Your Chai creations
+Plus my matcha mocktails makes 
+Covilla cafe`
+  },
+  {
+    by: people.Eliza,
+    for: people.Rianna,
+    date: "04/01/2021",
+    content: `Cooking cinnabuns
+Step step step around the pool
+Carrying ube
+
+She has a blue ring
+A pizza full fiance
+Congratulations`
+  },
+  {
+    by: people.Rianna,
+    for: people.Anthony,
+    date: "04/01/2021",
+    content: `Look, a cute puppy!
+Bang boom boom boom, boom boom oops
+Ube hates me now 
+
+Dancing on the streets
+Pop eyes for lunch every day
+Vargas, the freshman`
+  },
+  {
+    by: people.Anthony,
+    for: people.Sravya,
+    date: "04/01/2021",
+    content: `Plan maker, pong brea-
+-ker, she’s electric on your 
+side but worst to verse`
+  },
+  {
+    by: people.Tayherr,
+    for: people.Vargas,
+    date: "04/01/2021",
+    content: `10 doctors recommend
+You look at what he does then
+Do the opposite
+
+I mean let’s just think
+48 donuts each week
+Must not be healthy
+
+But when it matters
+He can’t even beat babs
+To eat two pizzas
+
+This kid would be so
+Goddamn fat if he quit his
+Seven mile runs`
+  },
+  {
+    by: people.Vargas,
+    for: people.KennyD,
+    date: "04/01/2021",
+    content: `Small Like A Penny 
+Solo cups, he made many 
+Guys, Where is Kenny?
+
+Smokes that M.J. Plant
+Works with political slant
+Why be friends with Ant?
+
+Girl he can't ignore 
+Leader of Foot in the door 
+Popeye's? Let's get more`
+  },
+  {
+    by: people.KennyD,
+    for: people.Matt,
+    date: "04/01/2021",
+    content: ``
+  },
+  {
+    by: people.Matt,
+    for: people.Kenny,
+    date: "04/01/2021",
+    content: `"Why won't you love me?"
+He pitiably proclaimed
+"U-u-u-u-be"
+
+A rueful nickname
+(Sravya, how could you)
+Shaw, partner to Gas`
+  },
+  {
+    by: people.Kenny,
+    for: people.Nikhil,
+    date: "04/01/2021",
+    content: `Oh no. oh no. oh
+No no no no no. Oh no.
+Not Nikhil again.
+
+Haikus are now old.
+Let’s try something really new.
+Now a limerick:
+
+There once was a boy from Dubai 
+Who smoke, and he drank, and got high
+He lost bad in pong
+So we all saw his dong
+And that look made a few people cry
+
+Ok that was good.
+What else can we do today.
+Maybe a sonnet?
+
+
+What say thee of a kid who loves tub time
+To run a shop alone without a shirt
+He zooms he types and tries to stop the crime
+Watch out, stay close, and try not to get hurt
+
+One asks why pick that San Diego State
+Why not support your friend: eleven seed
+Thou bracket sir is getting kind of late
+Now “Syracuse” is something of a creed.
+
+Besiege his playing of the game of bridge
+Poker, not now. No Avalon today.
+He ventures off to see what’s in the fridge 
+Pizza, he sighs. Stomach room must give way.
+
+Just wait around and see that classic grin
+To find the ball of energy within.
+
+
+And now finally
+A quick interpretive dance
+About our Nikhil 
+
+[it’s called “Nikhil’s Third Slice”]`
+  },
+  {
+    by: people.Nikhil,
+    for: people.Anubhav,
+    date: "04/01/2021",
+    content: `Eats more than Vargas
+Is in academia
+Makes more than Vargas
+
+Who is the built guy
+The one that is really jacked
+They call him Anub
+
+Hi Mister Guha
+How does it feel to have a 
+Misses R Guha
+
+Nikhil you ready
+For pushups, situps, pullups, 
+Anube fuck you`
+  },
+  {
+    by: people.Anubhav,
+    for: people.Tayherr,
+    date: "04/01/2021",
+    content: `Tub time tubber time
+Calling all tubbers tub time
+It’s tub time tubbers
+
+A man sits, eating.
+tears streaming. Red eyes. He says
+I feel so alive 
+
+Father of ube,
+Makes dancing look like child’s play,
+Never hits leg day`
+  },
 ];
