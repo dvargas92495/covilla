@@ -24,6 +24,18 @@ class MapChart extends React.Component {
     this.setState({ location });
   }
 
+  setMarkerByHash = () => {
+    const label = window.location.hash.replace(/^#(\/)?/, '');
+    const startMarker = markers.find(m => m.label.toLowerCase().replace(/ '/, '') === label);
+    this.props.setMarker(startMarker) 
+  }
+
+  componentDidMount = () => {
+    const callback = this.setMarkerByHash.bind(this);
+    callback();
+    window.addEventListener('hashchange', callback);
+  }
+
   render() {
     return (
       <>
@@ -63,25 +75,31 @@ class MapChart extends React.Component {
           {markers.map(
             (marker) => {
               const { location, coordinates, label, start_date, end_date } = marker;
+              const onClick = () => {
+                window.location.hash = label.toLowerCase().replace(/ '/,'');
+                this.props.setMarker(marker);
+              }
               return (
                 <Marker key={location} coordinates={coordinates}>
                   {isBefore(end_date) ? (
                     <circle
                       r={6}
                       fill={colors.night}
-                      onClick={() => this.props.setMarker(marker)}
+                      onClick={onClick}
                       style={{ cursor: "pointer" }}
                       onMouseOver={this.setHover(location)}
                       onMouseOut={this.setHover()}
+                      className={'map-marker'}
                     />
                   ) : isAfter(start_date) ? (
                     <circle
                       r={6}
                       fill={colors.washedBlue}
-                      onClick={() => this.props.setMarker(marker)}
+                      onClick={onClick}
                       style={{ cursor: "pointer" }}
                       onMouseOver={this.setHover(location)}
                       onMouseOut={this.setHover()}
+                      className={'map-marker'}
                     />
                   ) : (
                         <text
@@ -91,9 +109,10 @@ class MapChart extends React.Component {
                             fill: colors.black,
                             cursor: "pointer"
                           }}
-                          onClick={() => this.props.setMarker(marker)}
+                          onClick={onClick}
                           onMouseOver={this.setHover(location)}
                           onMouseOut={this.setHover()}
+                          className={'map-marker'}
                         >
                           &#9733;
                         </text>

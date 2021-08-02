@@ -22,6 +22,8 @@ class DetailView extends React.Component {
 
   handleClickOutside = (event) => {
     if (this.wrapperRef.current && this.wrapperRef.current.contains(event.target)) return;
+    if (event.target.classList.contains('map-marker')) return;
+    window.location.hash = '';
     this.props.setMarker();
   }
 
