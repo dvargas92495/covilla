@@ -432,7 +432,7 @@ export default [
       people.Daysi,
       people.Eliza,
       people.Matt,
-      people.Vinny
+      people.Vargas
     ],
     articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('08/02/2021')) && dateOf(a.date).isBefore(dateOf('08/29/2021'))),
     haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('08/02/2021')) && dateOf(a.date).isBefore(dateOf('08/29/2021'))),
