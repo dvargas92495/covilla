@@ -109,6 +109,11 @@ export default {
     photo: "/images/people/Jeff.webp",
     url: "https://www.instagram.com/jeffreywkim"
   },
+  "Jen": {
+    name: "Jen",
+    photo: "/images/people/Jen.jpg",
+    url: "https://www.instagram.com/jenkoide/",
+  },
   "Joel": {
     name: "Joel",
     photo: "/images/people/Joel.webp",
@@ -128,6 +133,11 @@ export default {
     name: "Katrina",
     photo: "/images/people/Katrina.webp",
     url: "https://www.instagram.com/klhui"
+  },
+  "Kawecki": {
+    name: "Kawecki",
+    photo: "/images/people/Kawecki.jpg",
+    url: "https://www.instagram.com/kaweckia/",
   },
   "Kenny": {
     name: "Kenny",

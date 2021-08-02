@@ -865,4 +865,325 @@ Father of ube,
 Makes dancing look like child’s play,
 Never hits leg day`
   },
+  {
+    by: people.Alisha,
+    for: people.Vargas,
+    date: '05/06/2021',
+    content: `You’re not gon tempt me
+With saccharine Cinnabon
+A + b, I don’t see 
+
+Big bootie mixes
+More like Franken-top 40
+Just play the full songs
+
+We may have just Met
+But I’ve formed a new tenet:
+Always muck the fets`
+  },
+  {
+    by: people.Daysi,
+    for: people.Diann,
+    date: '05/06/2021',
+    content: `Covilla: phase two
+TikTok views by the millions
+Sponsorships galore
+
+420 nails queen
+Fellow aesthetics lover
+Go Cruise fuck Waymo
+
+I promised myself 
+Of Ube I would not write
+Alas, she’s too cute
+
+Hello ubeloob
+ube doo be doo where are you
+Thank you for Uber`
+  },
+  {
+    by: people.Anthony,
+    for: people.Daysi,
+    date: '05/06/2021',
+    content: `Gray shirt gray pants yea
+Has a bun like Cinnabon 
+Will marry drake soon`
+  },
+  {
+    by: people.Vargas,
+    for: people.Tayherr,
+    date: '05/06/2021',
+    content: `Guys why are we lame
+Foam finger at the ballgame
+Thats not a pee stain
+
+Yup, uh huh, uh huh,
+uh huh, uh huh, uh huh, uh
+huh, uh huh, uh huh
+
+Apartment Seeking
+Poker Strategy's Tweaking
+Never Stops Peaking`
+  },
+  {
+    by: people.Matt,
+    for: people.Nikhil,
+    date: '05/06/2021',
+    content: `Five syllables first
+Seven syllables come next
+Finally, five, too
+
+First up, last to bed
+This month, studying GMAT
+Dubai, here he comes
+
+Weed gummies galore
+Dispensaries everywhere
+"I want to move here"`
+  },
+  {
+    by: people.Diann,
+    for: people.Matt,
+    date: '05/06/2021',
+    content: `https://covilla.life/images/april-haiku-diann-matt.mp4`
+  },
+  {
+    by: people.Vargas,
+    for: people.Tayherr,
+    date: '06/02/2021',
+    content: `Taste Taco Tuesdays
+Tub Time Tubbers Time To Tub
+Took Taylor Three Times
+
+Table Throw Tokens
+Tub Today Tub Tomorrow
+Tease, Twirl, Tap, Trap Troupe
+
+Thin Trousers Trend Thighs
+Toast To Tubbers That Tub True
+Treat Tension, Think Them
+
+DO YOU LIKE WAFFLES
+YES I LIKE WAFFLES, DO YOU
+LIKE PANCAKES, YES I
+
+LIKE PANCAKES, DO YOU
+LIKE FRENCH TOAST, YES I LIKE FRENCH
+TOAST DO DO DO DO
+
+DO DO DO DO DO
+CAN'T WAIT TO GET A MOUTHFUL
+I'm Sorry Nikhil`
+  },
+  {
+    by: people.Diann,
+    for: people.KennyD,
+    date: '06/02/2021',
+    content: `Have you fixed your car? 
+Sounds like a ghost rattling chains
+You’re why I don’t drive
+
+But seriously
+If you crash your struggling car
+You can’t marry grace
+
+Which is now the trend
+You’ve set from meeting her fam
+Y’all are moving fast`
+  },
+  {
+    by: people.Anthony,
+    for: people.Kawecki,
+    date: '06/02/2021',
+    content: `Five seven five yea
+That’s how the haiku is made
+This last line is five 
+
+We have the same name 
+A N T H O N Y
+But not the last name`
+  },
+  {
+    by: people.Jen,
+    for: people.Kenny,
+    date: '06/02/2021',
+    content: `apple connoisseur
+rarely miffed, heavy sleeper
+heard you drive slowly`
+  },
+  {
+    by: people.Sravya,
+    for: people.Daysi,
+    date: '06/02/2021',
+    content: `My Dearest Homez,
+I did not know your type was:
+Irritating men 
+
+Clothing? Style icon.
+Ancestors? Mafia Dons.
+But Vargas? Come on…`
+  },
+  {
+    by: people.KennyD,
+    for: people.Anthony,
+    date: '06/02/2021',
+    content: `The bane of the knicks
+You hate the Atlanta hawks
+Better luck next year`
+  },
+  {
+    by: people.Kawecki,
+    for: people.Vargas,
+    date: '06/02/2021',
+    content: `White T-shirts and games
+To untethered ambition
+But still, fuck the Mets`
+  },
+  {
+    by: people.Daysi,
+    for: people.Jen,
+    date: '06/02/2021',
+    content: `Welcome to our cult!
+We do self care and weeklies
+We do haikus too
+
+Always brings good vibes
+Although we’ve only just met 
+Jen is a new friend`
+  },
+  {
+    by: people.Sravya,
+    for: people.Kenny,
+    date: "07/30/2021",
+    content: `Winner in Poker,
+Loses to his nemesis,
+Coronavirus
+
+All through the sick days,
+Arrested Development
+Has kept us alive 
+
+This haiku is for
+The man, the myth, the legend:
+Kentucky Fried Man.`
+  },
+  {
+    by: people.Anna,
+    for: people.Daysi,
+    date: "07/30/2021",
+    content: `We went to one club
+And to a co working space 
+Then you got covid 
+
+Lost your taste and smell?
+Don’t like flavor anyway 
+Turkey wraps for days 
+
+Whole mushrooms are gross 
+Robes and culty tea party 
+Shrooms are the best drug?`
+  },
+  {
+    by: people.Daysi,
+    for: people.Nikhil,
+    date: "07/30/2021",
+    content: `Sagitarrius 
+Ruiner of my birthdays
+Evil so evil
+
+How the turn tables
+But I’m the bigger person
+So I won’t wreck you
+
+I can’t imagine
+Kenny your disappointment 
+That I got Nikhil
+
+My bitter rival
+My nemesis to the end
+I guess you’re alright`
+  },
+  {
+    by: people.Chandler,
+    for: people.Vargas,
+    date: "07/30/2021",
+    content: `Molly advocate
+Won’t stop til your mom rolls too
+What an ideal son
+
+Thousands in losses
+Next time, try staying sober
+Oh wait. You’re just bad
+
+Finally coupled up
+I’m happy to say you’re my
+Latest demon bro`
+  },
+  {
+    by: people.Anthony,
+    for: people.Sravya,
+    date: '07/30/2021',
+    content: `Not this shit again
+How much in the second line 
+Nevermind let’s go
+
+Best chef in the house
+Spice brings the weak to their knees
+Who wants chipotle 
+
+Call her Michael Bluth
+She brings the squad together 
+Squad squad squad squad squad`
+  },
+  {
+    by: people.Vargas,
+    for: people.Anthony,
+    date: '07/30/2021',
+    content: `Cant watch Pete's dingers
+Cant watch Pete's dingers
+Catch the ball butter fingers
+Catch the ball butter fingers
+Rips farts that linger
+Rips farts that linger
+
+candy, fast food slut
+candy, fast food slut
+TV on, his eyes are shut
+TV on, his eyes are shut
+its time to get nuts
+its time to get nuts
+
+courage I commend
+courage I commend
+impossible to offend
+impossible to offend
+he is my best friend
+he is my best friend`
+  },
+  {
+    by: people.Kenny,
+    for: people.Chandler,
+    date: '07/30/2021',
+    content: `Chandler copies me.
+I go to Red Rock Canyon.
+Then he goes as well.
+
+I get a sports car.
+Then he gets a sports car too.
+(Though mine was cooler)
+
+Then I take a test. 
+And I test positive.
+Please back off, ok.
+
+-
+
+Taste in friends? Alright.
+Taste in cars? Not too shabby.
+Music taste? Perfect.
+
+Let’s stay in tonight.
+And list to Bo Burnham.
+On repeat. Inside.`
+  }
 ];

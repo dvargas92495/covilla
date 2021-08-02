@@ -364,5 +364,79 @@ export default [
     haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('05/10/2021')) && dateOf(a.date).isBefore(dateOf('06/07/2021'))),
     videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('05/10/2021')) && dateOf(a.date).isBefore(dateOf('06/07/2021'))),
     podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('05/10/2021')) && dateOf(a.date).isBefore(dateOf('06/07/2021')))
+  },
+  {
+    start_date: "06/07/2021",
+    end_date: "07/03/2021",
+    label: "June '21",
+    location: "Palm Springs, CA",
+    coordinates: [-116.256900, 33.693960],
+    people: [
+      people.Alisha,
+      people.Anna,
+      people.Chandler,
+      people.Daysi,
+      people.Diann,
+      people.Eliza,
+      people.Joel,
+      people.Kenny,
+      people.Matt,
+      people.Sravya,
+      people.Tayherr,
+      people.Ubez,
+      people.Vargas
+    ],
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('06/07/2021')) && dateOf(a.date).isBefore(dateOf('07/03/2021'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('06/07/2021')) && dateOf(a.date).isBefore(dateOf('07/03/2021'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('06/07/2021')) && dateOf(a.date).isBefore(dateOf('07/03/2021'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('06/07/2021')) && dateOf(a.date).isBefore(dateOf('07/03/2021')))
+  },
+  {
+    start_date: "07/03/2021",
+    end_date: "08/01/2021",
+    label: "July '21",
+    location: "Las Vegas, NV",
+    coordinates: [-115.242510, 36.134700],
+    people: [
+      people.Abbey,
+      people.Anna,
+      people.Anthony,
+      people.Chandler,
+      people.Daysi,
+      people.Diann,
+      people.Eliza,
+      people.Joel,
+      people.Kenny,
+      people.KennyD,
+      people.Matt,
+      people.Nikhil,
+      people.Sravya,
+      people.Tayherr,
+      people.Ubez,
+      people.Vargas,
+      people.Vihar,
+      people.Vinny
+    ],
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('07/03/2021')) && dateOf(a.date).isBefore(dateOf('08/01/2021'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('07/03/2021')) && dateOf(a.date).isBefore(dateOf('08/01/2021'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('07/03/2021')) && dateOf(a.date).isBefore(dateOf('08/01/2021'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('07/03/2021')) && dateOf(a.date).isBefore(dateOf('08/01/2021')))
+  },
+  {
+    start_date: "08/02/2021",
+    end_date: "08/29/2021",
+    label: "August '21",
+    location: "Chicago, IL",
+    coordinates: [-87.681570, 41.902830],
+    people: [
+      people.Daysi,
+      people.Eliza,
+      people.Matt,
+      people.Vinny
+    ],
+    articles: articles.filter(a => !dateOf(a.date).isBefore(dateOf('08/02/2021')) && dateOf(a.date).isBefore(dateOf('08/29/2021'))),
+    haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('08/02/2021')) && dateOf(a.date).isBefore(dateOf('08/29/2021'))),
+    videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('08/02/2021')) && dateOf(a.date).isBefore(dateOf('08/29/2021'))),
+    podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('08/02/2021')) && dateOf(a.date).isBefore(dateOf('08/29/2021')))
   }
 ]
