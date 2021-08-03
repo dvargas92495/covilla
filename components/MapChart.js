@@ -26,7 +26,7 @@ class MapChart extends React.Component {
 
   setMarkerByHash = () => {
     const label = window.location.hash.replace(/^#(\/)?/, '');
-    const startMarker = markers.find(m => m.label.toLowerCase().replace(/ '/, '') === label);
+    const startMarker = markers.find(m => m.location.split(',')[0].toLowerCase().replace(/ /g, '_') === label);
     this.props.setMarker(startMarker) 
   }
 
@@ -76,7 +76,7 @@ class MapChart extends React.Component {
             (marker) => {
               const { location, coordinates, label, start_date, end_date } = marker;
               const onClick = () => {
-                window.location.hash = label.toLowerCase().replace(/ '/,'');
+                window.location.hash = location.split(',')[0].toLowerCase().replace(/ /g, '_');
                 this.props.setMarker(marker);
               }
               return (

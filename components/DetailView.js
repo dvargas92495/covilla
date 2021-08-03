@@ -213,7 +213,10 @@ class DetailView extends React.Component {
                   <h5 style={{ margin: 0, fontSize: 20 }}>{c.for.name}</h5>
                   <h6 style={{ margin: 0, fontSize: 16, fontVariant: "small-caps", textTransform: "lowercase", fontWeight: "normal" }}>By {c.by.name}</h6>
                 </div>
-                <p style={{ whiteSpace: 'pre-wrap' }}>{c.content}</p>
+                {c.content && c.content.endsWith('.mp4') 
+                  ? <video src={c.content} /> 
+                  : <p style={{ whiteSpace: 'pre-wrap' }}>{c.content}</p>
+                }
               </div>
             ))}
           </div>
