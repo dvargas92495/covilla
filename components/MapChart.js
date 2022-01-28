@@ -5,12 +5,12 @@ import {
   Geographies,
   Geography,
   Marker,
-  Line
+  Line,
 } from "react-simple-maps";
 import markers from "../util/markers";
 import { colors } from "../util/styles";
 import { isAfter, isBefore } from "../util/helpers";
-import styles from '../util/SimpleMaps.module.css';
+import styles from "../util/SimpleMaps.module.css";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
@@ -22,26 +22,30 @@ class MapChart extends React.Component {
 
   setHover = (location) => () => {
     this.setState({ location });
-  }
+  };
 
   setMarkerByHash = () => {
-    const label = window.location.hash.replace(/^#(\/)?/, '');
-    const startMarker = markers.find(m => m.location.split(',')[0].toLowerCase().replace(/ /g, '_') === label);
-    this.props.setMarker(startMarker) 
-  }
+    const label = window.location.hash.replace(/^#(\/)?/, "");
+    const startMarker = markers.find(
+      (m) => m.location.split(",")[0].toLowerCase().replace(/ /g, "_") === label
+    );
+    this.props.setMarker(startMarker);
+  };
 
   componentDidMount = () => {
     const callback = this.setMarkerByHash.bind(this);
     callback();
-    window.addEventListener('hashchange', callback);
-  }
+    window.addEventListener("hashchange", callback);
+  };
 
   render() {
     return (
       <>
-        <ComposableMap width={1000} projection="geoAlbersUsa"
+        <ComposableMap
+          width={1000}
+          projection="geoAlbersUsa"
           style={{
-            width: '100%'
+            width: "100%",
           }}
         >
           <Geographies geography={geoUrl}>
@@ -72,68 +76,70 @@ class MapChart extends React.Component {
               </>
             )}
           </Geographies>
-          {markers.map(
-            (marker) => {
-              const { location, coordinates, label, start_date, end_date } = marker;
-              const onClick = () => {
-                window.location.hash = location.split(',')[0].toLowerCase().replace(/ /g, '_');
-                this.props.setMarker(marker);
-              }
-              return (
-                <Marker key={location} coordinates={coordinates}>
-                  {isBefore(end_date) ? (
-                    <circle
-                      r={6}
-                      fill={colors.night}
-                      onClick={onClick}
-                      style={{ cursor: "pointer" }}
-                      onMouseOver={this.setHover(location)}
-                      onMouseOut={this.setHover()}
-                      className={'map-marker'}
-                    />
-                  ) : isAfter(start_date) ? (
-                    <circle
-                      r={6}
-                      fill={colors.washedBlue}
-                      onClick={onClick}
-                      style={{ cursor: "pointer" }}
-                      onMouseOver={this.setHover(location)}
-                      onMouseOut={this.setHover()}
-                      className={'map-marker'}
-                    />
-                  ) : (
-                        <text
-                          textAnchor="middle"
-                          style={{
-                            fontSize: 18,
-                            fill: colors.black,
-                            cursor: "pointer"
-                          }}
-                          onClick={onClick}
-                          onMouseOver={this.setHover(location)}
-                          onMouseOut={this.setHover()}
-                          className={'map-marker'}
-                        >
-                          &#9733;
-                        </text>
-                      )}
-                  {this.state.location === location && (
-                    <text
-                      textAnchor="middle"
-                      y={24}
-                      style={{
-                        fontFamily: "system-ui",
-                        fontSize: 12,
-                        fill: colors.black,
-                      }}
-                    >
-                      {label}
-                    </text>
-                  )}
-                </Marker>
-              );
-            }
-          )}
+          {markers.map((marker) => {
+            const { location, coordinates, label, start_date, end_date } =
+              marker;
+            const onClick = () => {
+              window.location.hash = location
+                .split(",")[0]
+                .toLowerCase()
+                .replace(/ /g, "_");
+              this.props.setMarker(marker);
+            };
+            return (
+              <Marker key={location} coordinates={coordinates || []}>
+                {isBefore(end_date) ? (
+                  <circle
+                    r={6}
+                    fill={colors.night}
+                    onClick={onClick}
+                    style={{ cursor: "pointer" }}
+                    onMouseOver={this.setHover(location)}
+                    onMouseOut={this.setHover()}
+                    className={"map-marker"}
+                  />
+                ) : isAfter(start_date) ? (
+                  <circle
+                    r={6}
+                    fill={colors.washedBlue}
+                    onClick={onClick}
+                    style={{ cursor: "pointer" }}
+                    onMouseOver={this.setHover(location)}
+                    onMouseOut={this.setHover()}
+                    className={"map-marker"}
+                  />
+                ) : (
+                  <text
+                    textAnchor="middle"
+                    style={{
+                      fontSize: 18,
+                      fill: colors.black,
+                      cursor: "pointer",
+                    }}
+                    onClick={onClick}
+                    onMouseOver={this.setHover(location)}
+                    onMouseOut={this.setHover()}
+                    className={"map-marker"}
+                  >
+                    &#9733;
+                  </text>
+                )}
+                {this.state.location === location && (
+                  <text
+                    textAnchor="middle"
+                    y={24}
+                    style={{
+                      fontFamily: "system-ui",
+                      fontSize: 12,
+                      fill: colors.black,
+                    }}
+                  >
+                    {label}
+                  </text>
+                )}
+              </Marker>
+            );
+          })}
           {markers.map((m, index) => {
             if (index + 1 === markers.length) return;
             return (
@@ -146,7 +152,7 @@ class MapChart extends React.Component {
                 strokeLinecap="round"
                 className={styles.LineStyle}
               />
-            )
+            );
           })}
         </ComposableMap>
       </>
@@ -156,7 +162,7 @@ class MapChart extends React.Component {
 
 MapChart.propTypes = {
   marker: PropTypes.object,
-  setMarker: PropTypes.func.isRequired
+  setMarker: PropTypes.func.isRequired,
 };
 
 export default MapChart;

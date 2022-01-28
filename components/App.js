@@ -11,13 +11,8 @@ import DetailView from "./DetailView";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      showConvertKit: false,
-    };
+    this.state = {};
   }
-
-  toggleConvertKit = () =>
-    this.setState({ showConvertKit: !this.state.showConvertKit });
 
   setMarker = marker => this.setState({ marker });
 
@@ -111,7 +106,6 @@ class App extends React.Component {
               content="images/favicon/ms-icon-144x144.png"
             />
             <meta name="theme-color" content="#ffffff" />
-            <script async src="https://prodigious-trader-7332.ck.page/dbdc7c9d00/index.js" />
             <style>
               {`html {
   overflow-x: hidden;
@@ -169,13 +163,6 @@ class App extends React.Component {
               </div>
             </div>
             <DetailView marker={this.state.marker} setMarker={this.setMarker} />
-            <script data-uid="dbdc7c9d00" />
-            <IconButton
-              onClick={this.toggleConvertKit}
-              style={{ position: "fixed", bottom: 0, right: 0 }}
-            >
-              {this.state.showConvertKit ? <CancelIcon /> : <MailIcon />}
-            </IconButton>
           </main>
 
           <style jsx global>{`
@@ -186,12 +173,6 @@ class App extends React.Component {
               font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
                 Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
                 sans-serif;
-            }
-            .formkit-form {
-              display: ${!this.state.showConvertKit && "none"};
-              position: absolute;
-              bottom: 32px;
-              right: 32px;
             }
 
             * {

@@ -438,5 +438,69 @@ export default [
     haikus: haikus.filter(a => !dateOf(a.date).isBefore(dateOf('08/02/2021')) && dateOf(a.date).isBefore(dateOf('08/29/2021'))),
     videos: videos.filter(a => !dateOf(a.date).isBefore(dateOf('08/02/2021')) && dateOf(a.date).isBefore(dateOf('08/29/2021'))),
     podcasts: podcasts.filter(a => !dateOf(a.date).isBefore(dateOf('08/02/2021')) && dateOf(a.date).isBefore(dateOf('08/29/2021')))
-  }
+  },
+  {
+    start_date: "08/29/2021",
+    end_date: "10/02/2021",
+    label: "September '21",
+    location: "Washington, DC",
+    coordinates: [-77.0368707, 38.9071923],
+    people: [
+      people.Alisha,
+      people.Daysi,
+      people.Eliza,
+      people.Matt,
+      people.Nikhil,
+      people.Sravya,
+      people.Vargas
+    ],
+    articles: [],
+    haikus: [],
+    videos: [],
+    podcasts: []
+  },
+  {
+    start_date: "10/10/2021",
+    end_date: "11/21/2021",
+    label: "Oct/Nov '21",
+    location: "Myrtle Beach, SC",
+    coordinates: [-78.886696,33.689060],
+    people: [
+      people.Daysi,
+      people.Vargas
+    ],
+    articles: [],
+    haikus: [],
+    videos: [],
+    podcasts: []
+  },
+  {
+    start_date: "11/21/2021",
+    end_date: "12/19/2021",
+    label: "December '21",
+    location: "Tampa, FL",
+    coordinates: [-82.452606, 27.964157],
+    people: [
+      people.Vargas
+    ],
+    articles: [],
+    haikus: [],
+    videos: [],
+    podcasts: []
+  },
+  /*{
+    start_date: "01/08/2022",
+    end_date: "02/04/2022",
+    label: "January '22",
+    location: "Mexico City, MX",
+    coordinates: [-99.133209, 19.432608],
+    people: [
+      people.Daysi,
+      people.Vargas
+    ],
+    articles: [],
+    haikus: [],
+    videos: [],
+    podcasts: []
+  }*/
 ]
